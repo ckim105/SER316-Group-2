@@ -232,7 +232,7 @@ public class AgendaGenerator {
 			else {
 				// tasks that have no deadline
 				s += "<p>"
-						+ Local.getString("No Deadline")
+						+ Local.getString("FAILURE IS NOT FATAL")
 						+ "</p>";		        
 			}
 		}                     
