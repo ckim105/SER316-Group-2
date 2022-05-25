@@ -38,7 +38,7 @@ public class AgendaGenerator {
 					+ "<style>\n"
 					+ "    body, td {font: 12pt sans-serif}\n"
 					+ "    h1 {font:20pt sans-serif; background-color:#E0E0E0; margin-top:0}\n"
-					+ "    h2 {font:16pt sans-serif; margin-bottom:0}\n"
+					+ "    h2 {font:100pt sans-serif; margin-bottom:0}\n"
 					+ "    li {margin-bottom:5px}\n"
 					+ " a {color:black; text-decoration:none}\n"             
 					+ "</style></head>\n"
