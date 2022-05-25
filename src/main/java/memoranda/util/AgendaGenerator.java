@@ -262,7 +262,7 @@ public class AgendaGenerator {
 		case Task.PRIORITY_LOWEST :
 			return "<font color=\"#666699\">"+Local.getString("Lowest")+"</font>";
 		case Task.PRIORITY_HIGH :
-			return "<font color=\"#FF9900\">"+Local.getString("High")+"</font>";
+			return "<font color=\"#ffa500\">"+Local.getString("High")+"</font>";
 		case Task.PRIORITY_HIGHEST :
 			return "<font color=\"red\">"+Local.getString("Highest")+"</font>";
 		}
