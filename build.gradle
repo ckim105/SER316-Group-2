@@ -14,3 +14,51 @@ dependencies {
   compile 'net.sourceforge.nekohtml:nekohtml:1.9.+'
 }
 
+///////////////////////////////////////////////////////////////////////
+// fatJar
+///////////////////////////////////////////////////////////////////////
+
+//apply plugin: 'java'
+
+// repositories {
+//     mavenCentral()
+// }
+
+// dependencies {
+//     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+//     compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+// }
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': "${mainClassName}"
+    }
+    baseName = 'ckim105_memoranda'
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}
+
+
+///////////////////////////////////////////////////////////////////////
+// Configure Checkstyle
+/////////////////////////////////////////////////////////////////////
+apply plugin: 'checkstyle'
+// checkstyle {
+//   // Keep checkstyle a little quieter
+//   ignoreFailures = true
+//   showViolations = false
+// }
+tasks.withType(Checkstyle) {
+  
+  reports {
+    html.enabled = true
+    xml.enabled = false
+  }
+  // include '**/*.java'
+  include '**/ui/App.java'
+ }
+checkstyle {
+    toolVersion = "8.8"
+}
