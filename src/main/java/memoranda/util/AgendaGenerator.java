@@ -179,7 +179,7 @@ public class AgendaGenerator {
 		if (!(t.getStartDate().getDate()).after(t.getEndDate().getDate())) {
 		    if (t.getEndDate().equals(date))
 		        s += "<p><font color=\"#FF9900\"><b>"
-		            + Local.getString("Should be done today")
+		            + Local.getString("FAILURE IS NOT FATAL")
 		            + ".</b></font></p>";
 		    else {
 		        Calendar endDateCal = t.getEndDate().getCalendar();
