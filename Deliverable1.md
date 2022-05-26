@@ -16,22 +16,22 @@ Document your Sprint Planning here. Also check the kickoff document for more det
 
 **Sprint Goal:** The goal of Sprint 1 is to get familiar with the existing code and to fix the easiest bugs and errors first.
 
-**How many User Stories did you add to the Product Backlog:**  Number
+**How many User Stories did you add to the Product Backlog:**  12 (including sample ones)
 
 **How many User Stories did you add to this Sprint:** 
 > Three new User Stories
 
 **Why did you add these US, why do you think you can get them done in the next Sprint?**
 
-> Your Answer
+> We added these User Stories because they reformat the existing tools of Memoranda to work for a Scrum board. This allows us to explore how Memoranda works to understand it better while also reusing existing code making it not as hard for us.
 
 **Why do you think these fit well with your Sprint goal? (details)**
 
-> Your Answer
+> This aligns with the goal as it allows us to explore and understand what bugs are in the Memoranda to fix and repurpose them.
 
 **Do you have a rough idea what you need to do? (if the answer is no then please let me know on Slack)**
 
-Yes.
+> Yes, our group understands what our plan is for this Sprint.
 
 
 
