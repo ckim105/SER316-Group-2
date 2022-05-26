@@ -3,8 +3,8 @@
 > Check in Project: Module Concepts document on Canvas in the Project module for more details 
 
 **GitHub Workflow** (start Sprint 1)
-  > Your Workflow
-
+  > We will create 1 branch per US using the format 'US# - Task'. When we commit, include the US# - Description in the commit or a description in order to correctly understand the commit. We create a Dev branch which all merges must go to first before it can be merged to master to ensure master is always a stable working version. When we do a pull request to merge to the master branch, another team member must test out the changes before it can be approved to be merged to the master branch. The Git Master will approve the merge if the review looks correct. 
+  
 **Unit Tests Blackbox** (start Sprint 2)
   > Your Blackbox testing policy 
 
