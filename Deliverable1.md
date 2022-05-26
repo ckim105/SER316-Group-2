@@ -9,7 +9,7 @@
 
 **Scrum Master**: Sumbal Khan
 
-**Git Master**: John Kim
+**Git Master**: Chang Suk Kim
 
 ### Sprint Planning (For Sprint 1-3)
 Document your Sprint Planning here. Also check the kickoff document for more details on what needs to be done. This is just the documentation. 
@@ -35,8 +35,6 @@ Document your Sprint Planning here. Also check the kickoff document for more det
 
 > Yes, our group understands what our plan is for this Sprint.
 
-
-
 ## 2: During the Sprint
 > Fill out the Meeting minutes during your Sprint and keep track of things. Update your Quality policies when needed, as explained in the lectures and in the Quality Policy documents on Canvas. 
 I would also advise you to already fill out the Contributions section (End of sprint) as you go, to create less work at the end.
@@ -45,7 +43,7 @@ I would also advise you to already fill out the Contributions section (End of sp
 > Add as many rows as needed and fill out the table. (Burndown starts with Sprint 2 and Travis CI starts with Sprint 3, not needed before that). 
 
 | Date  | Who did not attend  |Meeting notes (very brief)   | Burndown Info (on track, ahead behind is enough) | TravisCI info (does the master pass) | Additional Info  |
-|---|---|---|---|--|--|
+|05/25/2022|Everyone attended|Setup of Sprint 1 and assigning tasks|On track|Master passes|Decided on meeting Wed/Fri/Sun|
 |   |   |   |   |  |  |
 |   |   |   |   |  |  |
 |   |   |   |   |  |  |
@@ -54,10 +52,15 @@ I would also advise you to already fill out the Contributions section (End of sp
 
 > Add rows as needed and add the number how many meetings for each team member:
 
-   Name1 : Num Meetings
+   Sumbal Khan : Num Meetings
 
-   Name2 : Num Meetings
-
+   Kevin Nguyen : Num Meetings
+   
+   Chang Suk Kim : Num Meetings
+   
+   Fayez Mehdad : Num Meetings
+   
+   Anna Lehner : Num Meetings
 
 ## 3: After the Sprint
 
