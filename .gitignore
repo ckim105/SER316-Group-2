@@ -23,4 +23,8 @@
 # Mac DS file
 .DS_Store
 
+#Memoranda outputs
+*.html
+*.txt
+
 
