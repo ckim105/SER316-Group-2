@@ -14,3 +14,25 @@ dependencies {
   compile 'net.sourceforge.nekohtml:nekohtml:1.9.+'
 }
 
+import org.apache.tools.ant.filters.ReplaceTokens
+
+// Change compiler source directory
+sourceSets {
+    main {
+        java {
+            srcDirs = ['build/src/main/java']
+        }
+    }
+}
+
+// Prepare sources for compilation
+task prepareSources(type: Copy) {
+    from('src/main/java')
+    into('build/src/main/java')
+    filter(ReplaceTokens, tokens: ['VERSION' : 'Sprint 1', 'BUILD' : '1.0.2'])
+}
+
+// Prepare sources, before compile
+compileJava {
+    dependsOn prepareSources
+}
