@@ -14,9 +14,11 @@
 ### Sprint Planning (For Sprint 1-3)
 Document your Sprint Planning here. Also check the kickoff document for more details on what needs to be done. This is just the documentation. 
 
-**Sprint Goal:** The goal of Sprint 1 is to get familiar with the existing code and to fix the easiest bugs and errors first.
+**Sprint Goal:** 
+> The goal of Sprint 1 is to get familiar with the existing code and to fix the easiest bugs and errors first.
 
-**How many User Stories did you add to the Product Backlog:**  12 (including sample ones)
+**How many User Stories did you add to the Product Backlog:**  
+> 12 (including sample ones)
 
 **How many User Stories did you add to this Sprint:** 
 > Three new User Stories
