@@ -103,7 +103,7 @@ public class AppFrame extends JFrame {
         }
     };
 
-    public Action minimizeAction = new AbstractAction("Close the window") {
+    public Action minimizeAction = new AbstractAction("Hide the window") {
         public void actionPerformed(ActionEvent e) {
             doMinimize();
         }
@@ -666,7 +666,8 @@ public class AppFrame extends JFrame {
 
     public void doMinimize() {
         exitNotify();
-        App.closeWindow();
+        //App.closeWindow();
+        //System.exit(0);
     }
 
     //Help | About action performed
@@ -689,7 +690,7 @@ public class AppFrame extends JFrame {
         }
         else if ((e.getID() == WindowEvent.WINDOW_ICONIFIED)) {
             super.processWindowEvent(new WindowEvent(this,
-                    WindowEvent.WINDOW_CLOSING));
+                    WindowEvent.WINDOW_CLOSED));
             doMinimize();
         }
         else
