@@ -77,11 +77,11 @@ public class EventsTable extends JTable {
                 if (ev.isRepeatable())
                     comp.setFont(comp.getFont().deriveFont(Font.ITALIC));
                 if (CurrentDate.get().after(CalendarDate.today())) {
-                  comp.setForeground(java.awt.Color.green);
+                  comp.setForeground(java.awt.Color.black);
                 }                
                 else if (CurrentDate.get().equals(CalendarDate.today())) {
                   if (ev.getTime().after(new Date())) {
-                    comp.setForeground(java.awt.Color.green);
+                    comp.setForeground(java.awt.Color.black);
                     //comp.setFont(new java.awt.Font("Dialog", 1, 12));
                     comp.setFont(comp.getFont().deriveFont(Font.BOLD));
                   }
