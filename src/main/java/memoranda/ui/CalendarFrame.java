@@ -26,7 +26,7 @@ public class CalendarFrame extends JInternalFrame {
 
   }
   private void jbInit() throws Exception {
-    border1 = BorderFactory.createLineBorder(Color.gray,1);
+    border1 = BorderFactory.createLineBorder(Color.red,1);
     this.setClosable(true);
     this.setTitle(Local.getString("Select date"));
     this.setBorder(border1);
