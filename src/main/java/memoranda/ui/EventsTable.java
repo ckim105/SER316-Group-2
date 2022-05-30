@@ -82,7 +82,7 @@ public class EventsTable extends JTable {
                 }                
                 else if (CurrentDate.get().equals(CalendarDate.today())) {
                   if (ev.getTime().after(new Date())) {
-                    comp.setForeground(java.awt.Color.black);
+                    comp.setForeground(java.awt.Color.green);
                     //comp.setFont(new java.awt.Font("Dialog", 1, 12));
                     comp.setFont(comp.getFont().deriveFont(Font.BOLD));
                   }
