@@ -69,7 +69,7 @@ public class ExportSticker {
                         fwrite.write(contents);
                         
                         fwrite.close();
-                        JOptionPane.showMessageDialog(null,Local.getString("Documento creado con exito en su carpeta Memoranda =D"));
+                        JOptionPane.showMessageDialog(null,Local.getString("Document was succesfully created! :) "));
             
             
         } catch (IOException e) {
