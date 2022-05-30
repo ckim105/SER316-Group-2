@@ -39,8 +39,7 @@ public class EventsTable extends JTable {
     public EventsTable() {
         super();
         setModel(new EventsTableModel());
-        initTable(CurrentDate.get());
-        this.setShowGrid(false);
+        initTable(CurrentDate.get());        this.setShowGrid(false);
         CurrentDate.addDateListener(new DateListener() {
             public void dateChange(CalendarDate d) {
                 //updateUI();
@@ -78,7 +77,7 @@ public class EventsTable extends JTable {
                 if (ev.isRepeatable())
                     comp.setFont(comp.getFont().deriveFont(Font.ITALIC));
                 if (CurrentDate.get().after(CalendarDate.today())) {
-                  comp.setForeground(java.awt.Color.black);
+                  comp.setForeground(java.awt.Color.green);
                 }                
                 else if (CurrentDate.get().equals(CalendarDate.today())) {
                   if (ev.getTime().after(new Date())) {
