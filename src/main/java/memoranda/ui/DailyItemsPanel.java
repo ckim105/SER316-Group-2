@@ -123,7 +123,7 @@ public class DailyItemsPanel extends JPanel {
         mainPanel.setLayout(borderLayout3);
         editorsPanel.setLayout(cardLayout1);
         statusPanel.setBackground(Color.black);
-        statusPanel.setForeground(Color.white);
+        statusPanel.setForeground(Color.green);
         statusPanel.setMinimumSize(new Dimension(14, 24));
         statusPanel.setPreferredSize(new Dimension(14, 24));
         statusPanel.setLayout(borderLayout4);
@@ -204,7 +204,7 @@ public class DailyItemsPanel extends JPanel {
         
         editorsPanel.add(agendaPanel, "AGENDA");
         editorsPanel.add(eventsPanel, "EVENTS");
-        editorsPanel.add(tasksPanel, "TASKS");
+        editorsPanel.add(tasksPanel, "SCRUM");
         editorsPanel.add(editorPanel, "NOTES");
         
         splitPane.add(mainPanel, JSplitPane.RIGHT);
