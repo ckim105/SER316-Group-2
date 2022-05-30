@@ -4,6 +4,9 @@
 # Log file
 *.log
 
+#IntelliJ
+.idea/
+
 ### Eclipse ###
 
 ### Eclipse Patch ###
@@ -19,5 +22,9 @@
 
 # Mac DS file
 .DS_Store
+
+#Memoranda outputs
+*.html
+*.txt
 
 
