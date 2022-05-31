@@ -151,6 +151,11 @@ public class App {
 		splash = new JFrame();
 		ImageIcon spl =
 			new ImageIcon(App.class.getResource("/ui/splash.png"));
+/**
+ * 
+ * Changing splash.png will show a different splash screen with a new logo and name
+ */
+		
 		JLabel l = new JLabel();
 		l.setSize(400, 300);
 		l.setIcon(spl);
