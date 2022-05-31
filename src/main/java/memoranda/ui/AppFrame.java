@@ -261,7 +261,7 @@ public class AppFrame extends JFrame {
                 .getImage());
         contentPane = (JPanel) this.getContentPane();
         contentPane.setLayout(borderLayout1);
-        //this.setSize(new Dimension(800, 500));
+        this.setSize(new Dimension(800, 500));
         this.setTitle("Memoranda - " + CurrentProject.get().getTitle());
         //Added a space to App.VERSION_INFO to make it look some nicer
         statusBar.setText(" Version:" + App.VERSION_INFO + " (Build "
@@ -681,13 +681,13 @@ public class AppFrame extends JFrame {
          dlg.setVisible(true);
     }
 
+    
+    // Removed some lines for exit to work correctly
     protected void processWindowEvent(WindowEvent e) {
-        if (e.getID() == WindowEvent.WINDOW_CLOSING) {
-            if (Configuration.get("ON_CLOSE").equals("exit"))
+        if (e.getID() == WindowEvent.WINDOW_CLOSING) {    
                 doExit();
-            else
-                doMinimize();
         }
+        
         else if ((e.getID() == WindowEvent.WINDOW_ICONIFIED)) {
             super.processWindowEvent(new WindowEvent(this,
                     WindowEvent.WINDOW_CLOSED));
