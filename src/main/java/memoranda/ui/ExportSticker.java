@@ -71,7 +71,7 @@ public class ExportSticker {
 
         } catch (IOException e) {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(null,Local.getString("NO Logramos crear su documento =(..."), task_failed.png);
+            JOptionPane.showMessageDialog(null,Local.getString("NO Logramos crear su documento =(..."));
         }
 
 
