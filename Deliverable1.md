@@ -43,24 +43,26 @@ I would also advise you to already fill out the Contributions section (End of sp
 > Add as many rows as needed and fill out the table. (Burndown starts with Sprint 2 and Travis CI starts with Sprint 3, not needed before that). 
 
 | Date  | Who did not attend  |Meeting notes (very brief)   | Burndown Info (on track, ahead behind is enough) | TravisCI info (does the master pass) | Additional Info  |
-|05/25/2022|Everyone attended|Setup of Sprint 1 and assigning tasks|On track|Master passes|Decided on meeting Wed/Fri/Sun|
-|   |   |   |   |  |  |
-|   |   |   |   |  |  |
-|   |   |   |   |  |  |
+|---|---|---|---|--|--|
+|05/25/2022|None|Setup of Sprint 1 and assigning tasks|On track|Master passes|Zoom meeting|
+|05/29/2022|Anna|Setup of standup and git channel, began icebreaker|On track|Master passes|Zoom meeting|
+|05/29/2022|Anna|Everyone working on or completed first task|On track|Master passes|Stand-Up Meeting|
+|06/01/2022|Anna|Everyone working on or completed second task|On track|Master passes|Stand-up meeting|
+|06/01/2022|Anna|Complete Sprint 1 retro and setup Sprint 2|On track|Master passes|Zoom meeting|
 
 ### Meeting Summary:
 
 > Add rows as needed and add the number how many meetings for each team member:
 
-   Sumbal Khan : Num Meetings
+   Sumbal Khan : 5
 
-   Kevin Nguyen : Num Meetings
+   Kevin Nguyen : 5
    
-   Chang Suk Kim : Num Meetings
+   Chang Suk Kim : 5
    
-   Fayez Mehdad : Num Meetings
+   Fayez Mehdad : 5
    
-   Anna Lehner : Num Meetings
+   Anna Lehner : 1
 
 ## 3: After the Sprint
 
