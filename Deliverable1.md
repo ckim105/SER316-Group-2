@@ -46,8 +46,8 @@ I would also advise you to already fill out the Contributions section (End of sp
 |---|---|---|---|--|--|
 |05/25/2022|None|Setup of Sprint 1 and assigning tasks|On track|Master passes|Zoom meeting|
 |05/29/2022|Anna|Setup of standup and git channel, began icebreaker|On track|Master passes|Zoom meeting|
-|05/29/2022|Anna|Everyone working on or completed first task|On track|Master passes|Stand-Up Meeting|
-|06/01/2022|Anna|Everyone working on or completed second task|On track|Master passes|Stand-up meeting|
+|05/29/2022|Anna|Everyone working on or completed first task|On track|Master passes|Standup Meeting|
+|06/01/2022|Anna|Everyone working on or completed second task|On track|Master passes|Standup meeting|
 |06/01/2022|Anna|Complete Sprint 1 retro and setup Sprint 2|On track|Master passes|Zoom meeting|
 
 ### Meeting Summary:
@@ -148,6 +148,8 @@ Answer as a team!
     - info
 
 
+
+
 #### Team member B -- John Kim:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
@@ -174,6 +176,8 @@ Answer as a team!
     - info
 
 
+
+
 #### Team member C -- Fayez Mehdad:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
@@ -198,6 +202,8 @@ Answer as a team!
  **What was your main contribution to the Quality Policy documentation?:
 
     - info
+
+
 
 
 #### Team member D -- Sumbal Khan:
