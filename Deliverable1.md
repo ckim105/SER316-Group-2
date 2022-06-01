@@ -153,8 +153,9 @@ Answer as a team!
 #### Team member B -- John Kim:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - link1
-    - link2
+    - User Story #11 - Find Splash Screen [link1](https://github.com/ckim105/SER316-Group-2/commit/f01e1158f64435eb48c23874f85e074843869054)
+    - User Story #11 - Update Splash Screen Name and Logo [link2](https://github.com/ckim105/SER316-Group-2/commit/dbb57a1fb2f2b1a4dcd8d32eeef10f8a0ea01ac0)
+    - User Story #12 - Create a Use Case Diagram for Memoranda [link3](https://github.com/ckim105/SER316-Group-2/commit/998e96b0cc646f036c7fa7e886ccb10c37b0d2b1)
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
@@ -173,7 +174,7 @@ Answer as a team!
  
  **What was your main contribution to the Quality Policy documentation?:
 
-    - info
+    - I adhered to the guidelines that we discussed in the Quality Policy document for Sprint 1. Our team decided to branch off of dev and not master in order to protect the master branch. I also reviewed, tested, and approved pull requests as the git master.
 
 
 
@@ -234,15 +235,15 @@ Answer as a team!
 
 ## 4: Checklist for you to see if you are done
 - [ ] Filled out the complete form from above, all fields are filled and written in full sentences
-- [ ] Read the kickoff again to make sure you have all the details
-- [ ] User Stories that were not completed, were left in the Sprint and a copy created
-- [ ] Your Quality Policies are accurate and up to date
+- [x] Read the kickoff again to make sure you have all the details
+- [x] User Stories that were not completed, were left in the Sprint and a copy created
+- [x] Your Quality Policies are accurate and up to date
 - [ ] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
   - [ ] Kevin Nguyen
-  - [ ] John Kim
+  - [x] John Kim
   - [ ] Fayez Mehdad
   - [ ] Sumbal Khan
-- [ ] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
+- [x] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
   - [ ] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
   - [ ] All User Stories have acceptance tests
   - [ ] User Stories in your new Sprint Backlog have initial tasks which are in New
