@@ -153,9 +153,9 @@ Answer as a team!
 #### Team member B -- John Kim:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - User Story #11 - Find Splash Screen [link1](https://github.com/ckim105/SER316-Group-2/commit/f01e1158f64435eb48c23874f85e074843869054)
-    - User Story #11 - Update Splash Screen Name and Logo [link2](https://github.com/ckim105/SER316-Group-2/commit/dbb57a1fb2f2b1a4dcd8d32eeef10f8a0ea01ac0)
-    - User Story #12 - Create a Use Case Diagram for Memoranda [link3](https://github.com/ckim105/SER316-Group-2/commit/998e96b0cc646f036c7fa7e886ccb10c37b0d2b1)
+    - User Story #11 - Find Splash Screen [link1]https://github.com/ckim105/SER316-Group-2/commit/f01e1158f64435eb48c23874f85e074843869054
+    - User Story #11 - Update Splash Screen Name and Logo [link2]https://github.com/ckim105/SER316-Group-2/commit/dbb57a1fb2f2b1a4dcd8d32eeef10f8a0ea01ac0
+    - User Story #12 - Create a Use Case Diagram for Memoranda [link3]https://github.com/ckim105/SER316-Group-2/commit/998e96b0cc646f036c7fa7e886ccb10c37b0d2b1
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
