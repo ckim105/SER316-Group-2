@@ -1,9 +1,7 @@
 package main.java.memoranda.ui;
-
 import main.java.memoranda.EventsManager;
 import main.java.memoranda.util.Local;
 import nu.xom.Element;
-
 import javax.swing.*;
 import java.io.File;
 import java.io.FileWriter;
