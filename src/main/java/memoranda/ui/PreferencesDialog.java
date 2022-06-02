@@ -125,7 +125,7 @@ public class PreferencesDialog extends JDialog {
 	JRadioButton soundCustomRB = new JRadioButton();
 
 	BorderLayout borderLayout2 = new BorderLayout();
-	
+
 	JPanel editorConfigPanel = new JPanel(new BorderLayout());
 	JPanel econfPanel = new JPanel(new GridLayout(5, 2));
 	Vector fontnames = getFontNames();
@@ -278,63 +278,6 @@ public class PreferencesDialog extends JDialog {
 		gbc.insets = new Insets(2, 0, 0, 10);
 		gbc.anchor = GridBagConstraints.WEST;
 		GeneralPanel.add(closeHideRB, gbc);
-		jLabel3.setHorizontalAlignment(SwingConstants.RIGHT);
-		jLabel3.setText(Local.getString("Look and feel:"));
-		gbc = new GridBagConstraints();
-		gbc.gridx = 0;
-		gbc.gridy = 4;
-		gbc.insets = new Insets(2, 10, 0, 15);
-		gbc.anchor = GridBagConstraints.EAST;
-		GeneralPanel.add(jLabel3, gbc);
-
-		gbc = new GridBagConstraints();
-		gbc.gridx = 1;
-		gbc.gridy = 4;
-		gbc.insets = new Insets(2, 0, 0, 10);
-		gbc.anchor = GridBagConstraints.WEST;
-
-		gbc = new GridBagConstraints();
-		gbc.gridx = 1;
-		gbc.gridy = 5;
-		gbc.insets = new Insets(2, 0, 0, 10);
-		gbc.anchor = GridBagConstraints.WEST;
-		GeneralPanel.add(lfSystemRB, gbc);
-
-		gbc = new GridBagConstraints();
-		gbc.gridx = 1;
-		gbc.gridy = 6;
-		gbc.insets = new Insets(2, 0, 0, 10);
-		gbc.anchor = GridBagConstraints.WEST;
-		GeneralPanel.add(lfJavaRB, gbc);
-		lfGroup.add(lfCustomRB);
-		lfCustomRB.setText(Local.getString("Custom"));
-		lfCustomRB.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				lfCustomRB_actionPerformed(e);
-			}
-		});
-		gbc = new GridBagConstraints();
-		gbc.gridx = 1;
-		gbc.gridy = 7;
-		gbc.insets = new Insets(2, 0, 0, 10);
-		gbc.anchor = GridBagConstraints.WEST;
-		GeneralPanel.add(lfCustomRB, gbc);
-		classNameLabel.setEnabled(false);
-		classNameLabel.setText(Local.getString("L&F class name:"));
-		gbc = new GridBagConstraints();
-		gbc.gridx = 1;
-		gbc.gridy = 8;
-		gbc.insets = new Insets(2, 20, 0, 10);
-		gbc.anchor = GridBagConstraints.WEST;
-		GeneralPanel.add(classNameLabel, gbc);
-		lfClassName.setEnabled(false);
-		gbc = new GridBagConstraints();
-		gbc.gridx = 1;
-		gbc.gridy = 9;
-		gbc.insets = new Insets(7, 20, 0, 10);
-		gbc.anchor = GridBagConstraints.WEST;
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		GeneralPanel.add(lfClassName, gbc);
 		jLabel4.setHorizontalAlignment(SwingConstants.RIGHT);
 		jLabel4.setText(Local.getString("Startup:"));
 		gbc = new GridBagConstraints();
@@ -456,7 +399,7 @@ public class PreferencesDialog extends JDialog {
 		rsBottomPanel.add(browseB, gbc);
 
 		resourcePanel.add(rsBottomPanel, BorderLayout.SOUTH);
-		
+
 		// Build editorConfigPanel
 		normalFontLabel.setText(Local.getString("Normal text font"));
 		normalFontLabel.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -467,7 +410,7 @@ public class PreferencesDialog extends JDialog {
 		baseFontSizeLabel.setText(Local.getString("Base font size"));
 		baseFontSizeLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		antialiasChB.setText(Local.getString("Antialias text"));
-		JPanel bfsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT)); 
+		JPanel bfsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		bfsPanel.add(baseFontSize);
 		econfPanel.add(normalFontLabel);
 		econfPanel.add(normalFontCB);
@@ -589,7 +532,7 @@ public class PreferencesDialog extends JDialog {
 			this.enableCustomSound(true);
 		}
 		this.enableSound(enableSnd);
-		
+
 		antialiasChB.setSelected(Configuration.get("ANTIALIAS_TEXT")
 				.toString().equalsIgnoreCase("yes"));
 		if (Configuration.get("NORMAL_FONT").toString().length() >0)
@@ -701,7 +644,7 @@ public class PreferencesDialog extends JDialog {
 			Configuration.put("ANTIALIAS_TEXT", "yes");
 		else
 			Configuration.put("ANTIALIAS_TEXT", "no");
-		
+
 		Configuration.put("NORMAL_FONT", normalFontCB.getSelectedItem());
 		Configuration.put("HEADER_FONT", headerFontCB.getSelectedItem());
 		Configuration.put("MONO_FONT", monoFontCB.getSelectedItem());
@@ -709,9 +652,9 @@ public class PreferencesDialog extends JDialog {
 		App.getFrame().workPanel.dailyItemsPanel.editorPanel.editor.editor.setAntiAlias(antialiasChB.isSelected());
 		App.getFrame().workPanel.dailyItemsPanel.editorPanel.initCSS();
 		App.getFrame().workPanel.dailyItemsPanel.editorPanel.editor.repaint();
-		
+
 		Configuration.saveConfig();
-		
+
 	}
 
 	void enableCustomLF(boolean is) {
@@ -879,9 +822,9 @@ public class PreferencesDialog extends JDialog {
 	void soundCustomRB_actionPerformed(ActionEvent e) {
 		this.enableCustomSound(true);
 	}
-	
+
 	Vector getFontNames() {
-		GraphicsEnvironment gEnv = 
+		GraphicsEnvironment gEnv =
         	GraphicsEnvironment.getLocalGraphicsEnvironment();
         String envfonts[] = gEnv.getAvailableFontFamilyNames();
         Vector fonts = new Vector();
