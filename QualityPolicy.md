@@ -15,20 +15,20 @@
   > Your Code Review policy - For our coding policy, whenever we request a PR through GitHub, we are going through the checklist and adding it into the PR comments.   
 
   > Developer Checklist
-  > [ ] Add in comments for all new methods and new classes
-  > [ ] All new class names should be upper CamelCase with the first letter uppercase (example: MyClass)
-  > [ ] Constants and Enums should be in all CAPS (Example: PI)
-  > [ ] Indentation should be consistent
-  > [ ] No duplicate code, the code must be unique and not excessively long
-  > [ ] No lazy classes or classes that do too little
+  - [ ] Add in comments for all new methods and new classes
+  - [ ] All new class names should be upper CamelCase with the first letter uppercase (example: MyClass)
+  - [ ] Constants and Enums should be in all CAPS (Example: PI)
+  - [ ] Indentation should be consistent
+  - [ ] No duplicate code, the code must be unique and not excessively long
+  - [ ] No lazy classes or classes that do too little
 
   > Reviewer Checklist
   - [ ] Add in comments for all new methods and new classes
   - [ ] All new class names should be upper CamelCase with the first letter uppercase (example: MyClass)
   - [ ] Constants and Enums should be in all CAPS (Example: PI)
-  > [ ] Indentation should be consistent
-  > [ ] No duplicate code, the code must be unique and not excessively long
-  > [ ] No lazy classes or classes that do too little
+  - [ ] Indentation should be consistent
+  - [ ] No duplicate code, the code must be unique and not excessively long
+  - [ ] No lazy classes or classes that do too little
 
 **Static Analysis**  (online: start Sprint 3, campus: start Sprint 3)
   > Your Static Analysis policy   
