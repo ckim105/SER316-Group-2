@@ -23,9 +23,9 @@
   > [ ] No lazy classes or classes that do too little
 
   > Reviewer Checklist
-  > [ ] Add in comments for all new methods and new classes
-  > [ ] All new class names should be upper CamelCase with the first letter uppercase (example: MyClass)
-  > [ ] Constants and Enums should be in all CAPS (Example: PI)
+  - [ ] Add in comments for all new methods and new classes
+  - [ ] All new class names should be upper CamelCase with the first letter uppercase (example: MyClass)
+  - [ ] Constants and Enums should be in all CAPS (Example: PI)
   > [ ] Indentation should be consistent
   > [ ] No duplicate code, the code must be unique and not excessively long
   > [ ] No lazy classes or classes that do too little
