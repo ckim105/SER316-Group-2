@@ -1,5 +1,5 @@
 # Deliverable Information
-   > Please include your answers below in a good format so it is easy for me to see. For answers to questions please use these Blockquotes. Make sure you also check the kickoff document for more details. Also make sure this thing is well formatted and the links are links in here.
+> Please include your answers below in a good format so it is easy for me to see. For answers to questions please use these Blockquotes. Make sure you also check the kickoff document for more details. Also make sure this thing is well formatted and the links are links in here.
 
 ## 1: Basic Information (needed before you start with your Sprint -- Sprint Planning)
 
@@ -54,15 +54,16 @@ I would also advise you to already fill out the Contributions section (End of sp
 
 > Add rows as needed and add the number how many meetings for each team member:
 
-   Sumbal Khan : 5
 
-   Kevin Nguyen : 5
+Sumbal Khan : 5
 
-   Chang Suk Kim : 5
+Kevin Nguyen : 5
 
-   Fayez Mehdad : 5
+Chang Suk Kim : 5
 
-   Anna Lehner : 1
+Fayez Mehdad : 5
+
+Anna Lehner : 1
 
 ## 3: After the Sprint
 
@@ -181,60 +182,54 @@ In addition, we want to commit to dev every time a task is completed instead of 
 
     - I adhered to the guidelines that we discussed in the Quality Policy document for Sprint 1. Our team decided to branch off of dev and not master in order to protect the master branch. I also reviewed, tested, and approved pull requests as the git master.
 
-
-
-
 #### Team member C -- Fayez Mehdad:
-  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+**Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - US # 4 - Fix minimize functionality [link1]https://github.com/ckim105/SER316-Group-2/commit/383e42944e39629aaccd8e7ac984002dc5f702d5
+    - US # 5 - As a user I want the symbols/language (English) to display correctly to make sure the program is readable.
+
+**GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+**GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+**How did you contribute to Static Analysis -- Sprint 3:
 
     - link1
     - link2
 
-  **How did you contribute to Static Analysis -- Sprint 3:
+**What was your main contribution to the Quality Policy documentation?:
 
-    - link1
-    - link2
-
- **What was your main contribution to the Quality Policy documentation?:
-
-    - info
-
-
-
+    - I followed the guidelines set by the team in the quality policy. 
 
 #### Team member D -- Sumbal Khan:
-  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+**Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
     - User Story 6 - Fix Preference Bug: https://github.com/ckim105/SER316-Group-2/commit/fdb041ab470af5d9e7e79a344e808a9519b8f2fb
     - User Story 31 - Update Left Hand Menu: https://github.com/ckim105/SER316-Group-2/commit/543204bb57ccfe7426c6ae324dcd75098ebd9a3e
     - User Story 17 - Update Mismatched Icon: https://github.com/ckim105/SER316-Group-2/commit/672e67b0598af2695c5a44c97dd500b6de26e8fc
 
-   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+**GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+**GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-  **How did you contribute to Static Analysis -- Sprint 3:
+**How did you contribute to Static Analysis -- Sprint 3:
 
     - link1
     - link2
 
- **What was your main contribution to the Quality Policy documentation?:
+**What was your main contribution to the Quality Policy documentation?:
 
     - Ensured commit messages included US and Task numbers
     - Merged into dev and branched off of dev
@@ -256,3 +251,4 @@ In addition, we want to commit to dev every time a task is completed instead of 
   - [x] All User Stories have acceptance tests
   - [x] User Stories in your new Sprint Backlog have initial tasks which are in New
   - [x] You know how to proceed
+
