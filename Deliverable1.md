@@ -188,7 +188,7 @@ In addition, we want to commit to dev every time a task is completed instead of 
 **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
     - US # 4 - Fix minimize functionality [link1]https://github.com/ckim105/SER316-Group-2/commit/383e42944e39629aaccd8e7ac984002dc5f702d5
-    - US # 
+    - US # 5 - As a user I want the symbols/language (English) to display correctly to make sure the program is readable.
 
 **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
@@ -207,7 +207,7 @@ In addition, we want to commit to dev every time a task is completed instead of 
 
 **What was your main contribution to the Quality Policy documentation?:
 
-    - info
+    - I followed the guidelines set by the team in the quality policy. 
 
 
 
