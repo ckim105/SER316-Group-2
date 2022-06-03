@@ -54,6 +54,7 @@ I would also advise you to already fill out the Contributions section (End of sp
 
 > Add rows as needed and add the number how many meetings for each team member:
 
+
 Sumbal Khan : 5
 
 Kevin Nguyen : 5
@@ -128,61 +129,58 @@ In addition, we want to commit to dev every time a task is completed instead of 
 > In this section I want you to point me to your main contributions (each of you individually). Some of the topcs are not needed for the first deliverables (you should know which things you should have done in this Sprint, if you don't then you have probably missed something):
 
 #### Team member A -- Kevin Nguyen:
-**Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - User Story #18 - Update Version Number: https://github.com/ckim105/SER316-Group-2/commit/66c16dc73c37ba0de78b9eb0d42eb83380bc38ad
+    - User Story #1 - Fix Exiting Memoranda: https://github.com/ckim105/SER316-Group-2/commit/d75b6925b4352e11b6b4eb1d9530baac223fc574
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-**GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-**GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+  **How did you contribute to Static Analysis -- Sprint 3:
 
     - link1
     - link2
 
-**How did you contribute to Static Analysis -- Sprint 3:
+ **What was your main contribution to the Quality Policy documentation?:
 
-    - link1
-    - link2
-
-**What was your main contribution to the Quality Policy documentation?:
-
-    - info
+    - I discussed with the team and wrote out the Quality Policy we had for Sprint 1. All my user stories have branches created for them that follow the Quality Policy format. My commits also follow the quality policy format.
 
 
 
 
 #### Team member B -- John Kim:
-**Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
     - User Story #11 - Find Splash Screen [link1]https://github.com/ckim105/SER316-Group-2/commit/f01e1158f64435eb48c23874f85e074843869054
     - User Story #11 - Update Splash Screen Name and Logo [link2]https://github.com/ckim105/SER316-Group-2/commit/dbb57a1fb2f2b1a4dcd8d32eeef10f8a0ea01ac0
     - User Story #12 - Create a Use Case Diagram for Memoranda [link3]https://github.com/ckim105/SER316-Group-2/commit/998e96b0cc646f036c7fa7e886ccb10c37b0d2b1
 
-**GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-**GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
     - link1
     - link2
 
-**How did you contribute to Static Analysis -- Sprint 3:
+  **How did you contribute to Static Analysis -- Sprint 3:
 
     - link1
     - link2
 
-**What was your main contribution to the Quality Policy documentation?:
+ **What was your main contribution to the Quality Policy documentation?:
 
     - I adhered to the guidelines that we discussed in the Quality Policy document for Sprint 1. Our team decided to branch off of dev and not master in order to protect the master branch. I also reviewed, tested, and approved pull requests as the git master.
-
-
-
 
 #### Team member C -- Fayez Mehdad:
 **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
@@ -208,9 +206,6 @@ In addition, we want to commit to dev every time a task is completed instead of 
 **What was your main contribution to the Quality Policy documentation?:
 
     - I followed the guidelines set by the team in the quality policy. 
-
-
-
 
 #### Team member D -- Sumbal Khan:
 **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
@@ -242,17 +237,18 @@ In addition, we want to commit to dev every time a task is completed instead of 
 
 
 ## 4: Checklist for you to see if you are done
-- [ ] Filled out the complete form from above, all fields are filled and written in full sentences
+- [x] Filled out the complete form from above, all fields are filled and written in full sentences
 - [x] Read the kickoff again to make sure you have all the details
 - [x] User Stories that were not completed, were left in the Sprint and a copy created
 - [x] Your Quality Policies are accurate and up to date
-- [ ] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
-  - [ ] Kevin Nguyen
+- [x] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
+  - [x] Kevin Nguyen
   - [x] John Kim
   - [x] Fayez Mehdad
-  - [ ] Sumbal Khan
+  - [x] Sumbal Khan
 - [x] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
-  - [ ] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
-  - [ ] All User Stories have acceptance tests
-  - [ ] User Stories in your new Sprint Backlog have initial tasks which are in New
-  - [ ] You know how to proceed
+  - [x] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
+  - [x] All User Stories have acceptance tests
+  - [x] User Stories in your new Sprint Backlog have initial tasks which are in New
+  - [x] You know how to proceed
+
