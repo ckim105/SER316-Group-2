@@ -3,20 +3,32 @@
 > Check in Project: Module Concepts document on Canvas in the Project module for more details 
 
 **GitHub Workflow** (start Sprint 1)
-  > We will create 1 branch per US using the format 'US#-Task'. When we commit, include the US# - Description in the commit or a description in order to correctly understand the commit. We create a Dev branch which all merges must go to first before it can be merged to master to ensure master is always a stable working version. When we do a pull request to merge to the master branch, another team member must test out the changes before it can be approved to be merged to the master branch. The Git Master will approve the merge if the review looks correct. 
+  > We will create 1 branch per US using the format 'US# - Task'. When we commit, include the US# - Description in the commit or a description in order to correctly understand the commit. We create a Dev branch which all merges must go to first before it can be merged to master to ensure master is always a stable working version. When we do a pull request to merge to the master branch, another team member must test out the changes before it can be approved to be merged to the master branch. The Git Master will approve the merge if the review looks correct. 
   
 **Unit Tests Blackbox** (start Sprint 2)
-  > Your Blackbox testing policy 
+  > We will be testing all new and changed methods. We will be using EQ and BVA as it is needed. Have a specific blackbox testing file that will test a specific thing. The reviewer must be someone other than the developer.
 
  **Unit Tests Whitebox** (online: start Sprint 2, campus: start Sprint 3)
-  > Your Whitebox testing policy 
+  > We will test all new and changed methods. Have a specific whitebox testing file that will test a specific thing. Code coverage should be 90% node (code) coverage and edge (branch) coverage. The reviewer can be the developer. 
 
 **Code Review** (online: due start Sprint 2, campus: start Sprint 3)
-  > Your Code Review policy   
+  > Your Code Review policy - For our coding policy, whenever we request a PR through GitHub, we are going through the checklist and adding it into the PR comments.   
 
-  > Include a checklist/questions list which every developer will need to fill out/answe when creating a Pull Request to the Dev branch. 
+  > Developer Checklist
+  - [ ] Add in comments for all new methods and new classes
+  - [ ] All new class names should be upper CamelCase with the first letter uppercase (example: MyClass)
+  - [ ] Constants and Enums should be in all CAPS (Example: PI)
+  - [ ] Indentation should be consistent
+  - [ ] No duplicate code, the code must be unique and not excessively long
+  - [ ] No lazy classes or classes that do too little
 
-  > Include a checklist/question list which every reviewer will need to fill out/anser when conducting a review, this checklist (and the answers of course) need to be put into the Pull Request review.
+  > Reviewer Checklist
+  - [ ] Add in comments for all new methods and new classes
+  - [ ] All new class names should be upper CamelCase with the first letter uppercase (example: MyClass)
+  - [ ] Constants and Enums should be in all CAPS (Example: PI)
+  - [ ] Indentation should be consistent
+  - [ ] No duplicate code, the code must be unique and not excessively long
+  - [ ] No lazy classes or classes that do too little
 
 **Static Analysis**  (online: start Sprint 3, campus: start Sprint 3)
   > Your Static Analysis policy   
