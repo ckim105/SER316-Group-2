@@ -14,24 +14,24 @@
 ### Sprint Planning (For Sprint 1-3)
 Document your Sprint Planning here. Also check the kickoff document for more details on what needs to be done. This is just the documentation. 
 
-**Sprint Goal:** Your Sprint goal
+**Sprint Goal:** The goal of this Sprint is to change Memoranda into a basic Scrum board and to focus on the UI. 
 
-**How many User Stories did you add to the Product Backlog:**  Number
+**How many User Stories did you add to the Product Backlog:**  We added 2 User Stories to the backlog
 
 **How many User Stories did you add to this Sprint:** 
-> Answer the questions below about your Sprint Planning?
+>  8
 
 **Why did you add these US, why do you think you can get them done in the next Sprint?**
 
-> Your Answer
+> We added in these User Stories because they will change Memoranda into a preliminary Scrum board. We hope to accomplish most of the User Stories for Sprint 2.
 
 **Why do you think these fit well with your Sprint goal? (details)**
 
-> Your Answer
+> All of these User Stories pertain to updating the UI so that it represents a Scrum board. 
 
 **Do you have a rough idea what you need to do? (if the answer is no then please let me know on Slack)**
 
-> Your Answer
+> Yes, we have a good idea of how to start Sprint 2.
 
 
 
@@ -44,7 +44,7 @@ I would also advise you to already fill out the Contributions section (End of sp
 
 | Date  | Who did not attend  |Meeting notes (very brief)   | Burndown Info (on track, ahead behind is enough) | TravisCI info (does the master pass) | Additional Info  |
 |---|---|---|---|--|--|
-|   |   |   |   |  |  |
+|06/03/22|Anna|Met to discuss and start on Sprint 2|   |  |  |
 |   |   |   |   |  |  |
 |   |   |   |   |  |  |
 
