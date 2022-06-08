@@ -66,6 +66,11 @@ public class TaskDialog extends JDialog {
     JTextArea descriptionField = new JTextArea();
     JScrollPane descriptionScrollPane = new JScrollPane(descriptionField);
     
+    
+//  Field to display acceptance criteria
+    JTextArea ACText = new JTextArea();
+    
+    
 //    Border border7;
     Border border8;
     CalendarFrame startCalFrame = new CalendarFrame();
@@ -98,6 +103,11 @@ public class TaskDialog extends JDialog {
     JLabel jLabelDescription = new JLabel();
 	JCheckBox chkEndDate = new JCheckBox();
 	
+	
+//  JLabel for AC field
+    JLabel jLabelAC = new JLabel();
+    
+    
 	JPanel jPanelProgress = new JPanel(new FlowLayout(FlowLayout.RIGHT));
 	JLabel jLabelProgress = new JLabel();
 	JSpinner progress = new JSpinner(new SpinnerNumberModel(0, 0, 100, 5));
@@ -126,7 +136,7 @@ public class TaskDialog extends JDialog {
         border2 = BorderFactory.createEtchedBorder(Color.white, 
             new Color(142, 142, 142));
         border3 = new TitledBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0), 
-        Local.getString("To Do"), TitledBorder.LEFT, TitledBorder.BELOW_TOP);
+        Local.getString("Title"), TitledBorder.LEFT, TitledBorder.BELOW_TOP);
         border4 = BorderFactory.createEmptyBorder(0, 5, 0, 5);
 //        border5 = BorderFactory.createEmptyBorder();
 //        border6 = BorderFactory.createBevelBorder(BevelBorder.LOWERED,
@@ -174,7 +184,7 @@ public class TaskDialog extends JDialog {
         //dialogTitlePanel.setPreferredSize(new Dimension(159, 52));
         header.setFont(new java.awt.Font("Dialog", 0, 20));
         header.setForeground(new Color(0, 0, 124));
-        header.setText(Local.getString("To do"));
+        header.setText(Local.getString("User Story"));
         header.setIcon(new ImageIcon(main.java.memoranda.ui.TaskDialog.class.getResource(
             "/ui/icons/task48.png")));
         
@@ -196,7 +206,28 @@ public class TaskDialog extends JDialog {
         gbCon.weighty = 1;
         gbCon.anchor = GridBagConstraints.WEST;
         gbLayout.setConstraints(jLabelDescription,gbCon);
+        
+        
+     // Creates the dimensions for the AC label        
+        jLabelAC.setMaximumSize(new Dimension(100, 16));
+        jLabelAC.setMinimumSize(new Dimension(60, 16));
+        jLabelAC.setText(Local.getString("Acceptance Criteria"));
+        gbCon = new GridBagConstraints();
+        gbCon.gridwidth = GridBagConstraints.REMAINDER;
+        gbCon.weighty = 1;
+        gbCon.anchor = GridBagConstraints.WEST;
+        gbLayout.setConstraints(jLabelAC,gbCon);
+        
 
+     // Creates the dimensions for the ACText text area
+        ACText.setBorder(border8);
+        ACText.setPreferredSize(new Dimension(375, 72));
+        ACText.setLineWrap(true);
+        ACText.setWrapStyleWord(true);
+        gbCon = new GridBagConstraints();
+        gbCon.gridwidth = GridBagConstraints.REMAINDER;
+        gbCon.weighty = 3;
+     
         descriptionField.setBorder(border8);
         descriptionField.setPreferredSize(new Dimension(375, 387)); // 3 additional pixels from 384 so that the last line is not cut off
         descriptionField.setLineWrap(true);
@@ -336,6 +367,12 @@ public class TaskDialog extends JDialog {
         jPanel8.add(todoField, null);
         jPanel8.add(jLabelDescription);
         jPanel8.add(descriptionScrollPane, null);
+        
+        // Adds the AC Field to the User Story panel
+        jPanel8.add(jLabelAC);
+        jPanel8.add(ACText, null);
+        ACText.setText("AC1: ");
+        
         areaPanel.add(jPanel2, BorderLayout.CENTER);
         jPanel2.add(jPanel6, null);
         jPanel6.add(jLabel6, null);

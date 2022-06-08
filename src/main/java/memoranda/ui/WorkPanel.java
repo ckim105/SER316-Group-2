@@ -134,7 +134,7 @@ public class WorkPanel extends JPanel {
 			}
 		});
 		tasksB.setVerticalAlignment(SwingConstants.TOP);
-		tasksB.setText(Local.getString("SCRUM BOARD"));
+		tasksB.setText(Local.getString("BACKLOG"));
 		tasksB.setHorizontalTextPosition(SwingConstants.CENTER);
 		tasksB.setFocusPainted(false);
 		tasksB.setBorderPainted(false);
