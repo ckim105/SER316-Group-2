@@ -64,7 +64,7 @@ public class ExportSticker {
 
                         fwrite.write(contents);
 
-                        final ImageIcon icon = new ImageIcon("/Users/sbkhan/IdeaProjects/Eselsbruecke_spring2022B/src/main/resources/ui/icons/task_completed.png");
+                        final ImageIcon icon = new ImageIcon("/ui/icons/task_completed.png");
 
                         fwrite.close();
                         JOptionPane.showMessageDialog(null,Local.getString("Document successfully created in your Memoranda folder =D"),"Success", JOptionPane.INFORMATION_MESSAGE, icon);
