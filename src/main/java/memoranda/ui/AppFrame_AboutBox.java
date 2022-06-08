@@ -65,8 +65,9 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
     catch(Exception e) {
       e.printStackTrace();
     }
-    setSize(400, 500);
+    setSize(415, 555);
   }
+
   //Component initialization
   private void jbInit() throws Exception  {    
     String text = "<html>";
@@ -82,16 +83,16 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
     text += "</html>";
     
     image = new ImageIcon(AppFrame_AboutBox.class.getResource("/ui/memoranda.png"));
-    this.setTitle(Local.getString("About Memoranda"));
+    this.setTitle(Local.getString("About ScrumBox"));
     setResizable(false);
     // Initialize Objects
     lblText.setFont(new java.awt.Font("Dialog", 0, 11));
     lblText.setText(text);
-    lblText.setBounds(10, 55, 300, 400);
+    lblText.setBounds(10, 105, 300, 400);
 
     
     button1.setText(Local.getString("Ok"));
-    button1.setBounds(150, 415, 95, 30);
+    button1.setBounds(150, 480, 95, 30);
     button1.addActionListener(this);
     button1.setPreferredSize(new Dimension(95, 30));
     button1.setBackground(new Color(69, 125, 186));
@@ -103,7 +104,7 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
     layeredPane.add(imgLabel, new Integer(1));
     layeredPane.add(lblText, new Integer(2));    
     layeredPane.add(button1, new Integer(2));
-    this.getContentPane().setBackground(new Color(251, 197, 63));
+    this.getContentPane().setBackground(new Color(255, 255, 255));
   }
   //Overridden so we can exit when window is closed
   protected void processWindowEvent(WindowEvent e) {
