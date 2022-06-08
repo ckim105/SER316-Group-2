@@ -75,9 +75,9 @@ public class TaskDialog extends JDialog {
     Border border8;
     CalendarFrame startCalFrame = new CalendarFrame();
     CalendarFrame endCalFrame = new CalendarFrame();
-    String[] priority = {Local.getString("Lowest"), Local.getString("Low"),
-        Local.getString("Normal"), Local.getString("High"),
-        Local.getString("Highest")};
+    String[] priority = {Local.getString("New"), Local.getString("In Progress"),
+        Local.getString("Testing"), Local.getString("Closed"),
+        Local.getString("Help/Info")};
     boolean ignoreStartChanged = false;
     boolean ignoreEndChanged = false;
     JPanel jPanel4 = new JPanel(new FlowLayout(FlowLayout.RIGHT));
@@ -240,7 +240,9 @@ public class TaskDialog extends JDialog {
 
         jLabelEffort.setMaximumSize(new Dimension(100, 16));
         jLabelEffort.setMinimumSize(new Dimension(60, 16));
-        jLabelEffort.setText(Local.getString("Est Effort(hrs)"));
+        
+        // Change Estimated hours into Point system instead
+        jLabelEffort.setText(Local.getString("Points"));
         effortField.setBorder(border8);
         effortField.setPreferredSize(new Dimension(30, 24));
 
@@ -341,18 +343,21 @@ public class TaskDialog extends JDialog {
             }
         });
         
-        setNotifB.setText(Local.getString("Set notification"));
+        // Restructure set notification function to assign a user function instead
+        setNotifB.setText(Local.getString("Assign a User"));
         setNotifB.setIcon(
             new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/notify.png")));
         setNotifB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                setNotifB_actionPerformed(e);
+                assignUser_actionPerformed(e);
             }
         });
         jLabel7.setMaximumSize(new Dimension(100, 16));
         jLabel7.setMinimumSize(new Dimension(60, 16));
         //jLabel7.setPreferredSize(new Dimension(60, 16));
-        jLabel7.setText(Local.getString("Priority"));
+        
+        //Priority will be restructured to change the statuses in the future
+        jLabel7.setText(Local.getString("Status"));
 
         priorityCB.setFont(new java.awt.Font("Dialog", 0, 11));
         jPanel4.add(jLabel7, null);
@@ -394,12 +399,13 @@ public class TaskDialog extends JDialog {
         
         jPanel3.add(setNotifB, null);
         
-        jLabelProgress.setText(Local.getString("Progress"));
+        // Progress will either be restructured or removed in the future
+        jLabelProgress.setText(Local.getString("TBD Changed"));
         jPanelProgress.add(jLabelProgress, null);
         jPanelProgress.add(progress, null);
         jPanel2.add(jPanelProgress);
         
-        priorityCB.setSelectedItem(Local.getString("Normal"));
+        priorityCB.setSelectedItem(Local.getString("Testing"));
         startCalFrame.cal.addSelectionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (ignoreStartChanged)
@@ -473,9 +479,10 @@ public class TaskDialog extends JDialog {
         endCalFrame.show();
     }
     
-    void setNotifB_actionPerformed(ActionEvent e) {
-    	((AppFrame)App.getFrame()).workPanel.dailyItemsPanel.eventsPanel.newEventB_actionPerformed(e, 
-			this.todoField.getText(), (Date)startDate.getModel().getValue(),(Date)endDate.getModel().getValue());
+    // Re-implement a different function in the future to assign a user
+    void assignUser_actionPerformed(ActionEvent e) {
+    //	((AppFrame)App.getFrame()).workPanel.dailyItemsPanel.eventsPanel.newEventB_actionPerformed(e, 
+	//		this.todoField.getText(), (Date)startDate.getModel().getValue(),(Date)endDate.getModel().getValue());
     }
 
 }
