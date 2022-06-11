@@ -78,7 +78,7 @@ public class ProjectDialog extends JDialog {
         topPanel.setBackground(Color.WHITE);
         header.setFont(new java.awt.Font("Dialog", 0, 20));
         header.setForeground(new Color(0, 0, 124));
-        header.setText(Local.getString("Project"));
+        header.setText(Local.getString("ScrumBox Project"));
         //header.setHorizontalAlignment(SwingConstants.CENTER);
         header.setIcon(new ImageIcon(main.java.memoranda.ui.ProjectDialog.class.getResource(
             "/ui/icons/project48.png")));
@@ -329,8 +329,9 @@ public class ProjectDialog extends JDialog {
         endCalFrame.show();
     }
 
+    //changed dialog to "ScrumBox Project"
     public static void newProject() {
-        ProjectDialog dlg = new ProjectDialog(null, Local.getString("New project"));
+        ProjectDialog dlg = new ProjectDialog(null, Local.getString("New ScrumBox Project"));
 
         Dimension dlgSize = dlg.getSize();
         //dlg.setSize(dlgSize);
