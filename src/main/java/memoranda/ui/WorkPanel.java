@@ -54,21 +54,21 @@ public class WorkPanel extends JPanel {
 			BorderFactory.createCompoundBorder(
 				BorderFactory.createBevelBorder(
 					BevelBorder.LOWERED,
-					Color.white,
-					Color.white,
-					new Color(124, 124, 124),
-					new Color(178, 178, 178)),
+					Color.gray,
+					Color.gray,
+					new Color(188, 188, 188),
+					new Color(188, 188, 188)),
 				BorderFactory.createEmptyBorder(0, 2, 0, 0));
 
 		this.setLayout(borderLayout1);
 		toolBar.setOrientation(JToolBar.VERTICAL);
-		toolBar.setBackground(Color.white);
+		toolBar.setBackground(Color.gray);
 
 		toolBar.setBorderPainted(false);
 		toolBar.setFloatable(false);
 		panel.setLayout(cardLayout1);
 
-		agendaB.setBackground(Color.white);
+		agendaB.setBackground(Color.gray);
 		agendaB.setMaximumSize(new Dimension(100, 100));
 		agendaB.setMinimumSize(new Dimension(30, 30));
 
@@ -94,7 +94,7 @@ public class WorkPanel extends JPanel {
 		agendaB.setMargin(new Insets(0, 0, 0, 0));
 		agendaB.setSelected(true);
 
-		eventsB.setBackground(Color.white);
+		eventsB.setBackground(Color.gray);
 		eventsB.setMaximumSize(new Dimension(100, 100));
 		eventsB.setMinimumSize(new Dimension(30, 30));
 
@@ -143,16 +143,16 @@ public class WorkPanel extends JPanel {
 		tasksB.setMinimumSize(new Dimension(30, 30));
 		tasksB.setOpaque(false);
 		tasksB.setMaximumSize(new Dimension(100, 100));
-		tasksB.setBackground(Color.white);
+		tasksB.setBackground(Color.gray);
 
 		notesB.setFont(new java.awt.Font("Dialog", 1, 10));
-		notesB.setBackground(Color.white);
+		notesB.setBackground(Color.gray);
 		notesB.setBorder(null);
 		notesB.setMaximumSize(new Dimension(100, 100));
 		notesB.setMinimumSize(new Dimension(30, 30));
 		notesB.setOpaque(false);
 		notesB.setPreferredSize(new Dimension(100, 100));
-		notesB.setBorderPainted(false);
+		notesB.setBorderPainted(true);
 		notesB.setContentAreaFilled(false);
 		notesB.setFocusPainted(false);
 		notesB.setHorizontalTextPosition(SwingConstants.CENTER);
@@ -195,7 +195,7 @@ public class WorkPanel extends JPanel {
 		filesB.setMinimumSize(new Dimension(30, 30));
 		filesB.setOpaque(false);
 		filesB.setMaximumSize(new Dimension(100, 100));
-		filesB.setBackground(Color.white);
+		filesB.setBackground(Color.gray);
 		this.add(toolBar, BorderLayout.WEST);
 		this.add(panel, BorderLayout.CENTER);
 		panel.add(dailyItemsPanel, "DAILYITEMS");
@@ -265,7 +265,7 @@ public class WorkPanel extends JPanel {
 	}
 
 	void setCurrentButton(JButton cb) {
-		currentB.setBackground(Color.white);
+		currentB.setBackground(Color.gray);
 		currentB.setOpaque(false);
 		currentB = cb;
 		// Default color blue
