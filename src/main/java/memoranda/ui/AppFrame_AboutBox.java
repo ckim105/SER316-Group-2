@@ -33,15 +33,15 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
   String url = App.WEBSITE_URL;
   String developersHead = Local.getString("Developers") + ":";
   String[] developers = {
-              "Fayez Mehdad",
-              "Sumbal Khan",
-              "Kevin Nguyen",
-              "John Kim"            
+              "Fayez Mehdad (fmehdad@asu.edu)",
+              "Sumbal Khan (sbkhan@asu.edu)",
+              "Kevin Nguyen (knguye71@asu.edu)",
+              "John Kim (ckim105@asu.edu)"
   };
   String othersHead = Local.getString("Other contributors") + ":";
   String[] others = {
-              "Professor Das",
-              "Varun Singh"                            
+              "Professor Das (sdas76@asu.edu)",
+              "Varun Singh (vsingh57@asu.edu)"
  };
     
   JLayeredPane layeredPane;
@@ -57,7 +57,7 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
     catch(Exception e) {
       e.printStackTrace();
     }
-    setSize(415, 555);
+    setSize(415, 505);
   }
 
   //Component initialization
@@ -84,7 +84,7 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
 
     
     button1.setText(Local.getString("Ok"));
-    button1.setBounds(150, 480, 95, 30);
+    button1.setBounds(150, 420, 95, 30);
     button1.addActionListener(this);
     button1.setPreferredSize(new Dimension(95, 30));
     button1.setBackground(new Color(69, 125, 186));
