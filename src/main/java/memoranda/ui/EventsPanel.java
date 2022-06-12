@@ -89,7 +89,7 @@ public class EventsPanel extends JPanel {
         newEventB.setEnabled(true);
         newEventB.setMaximumSize(new Dimension(24, 24));
         newEventB.setMinimumSize(new Dimension(24, 24));
-        newEventB.setToolTipText(Local.getString("New event"));
+        newEventB.setToolTipText(Local.getString("New sprint"));
         newEventB.setRequestFocusEnabled(false);
         newEventB.setPreferredSize(new Dimension(24, 24));
         newEventB.setFocusable(false);
@@ -314,7 +314,7 @@ public class EventsPanel extends JPanel {
     }
     
     void newEventB_actionPerformed(ActionEvent e, String tasktext, Date startDate, Date endDate) {
-    	EventDialog dlg = new EventDialog(App.getFrame(), Local.getString("New event"));
+    	EventDialog dlg = new EventDialog(App.getFrame(), Local.getString("New sprint"));
     	Dimension frmSize = App.getFrame().getSize();
     	Point loc = App.getFrame().getLocation();
     	if (tasktext != null) {
