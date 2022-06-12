@@ -152,7 +152,7 @@ public class WorkPanel extends JPanel {
 		notesB.setMinimumSize(new Dimension(30, 30));
 		notesB.setOpaque(false);
 		notesB.setPreferredSize(new Dimension(100, 100));
-		notesB.setBorderPainted(false);
+		notesB.setBorderPainted(true);
 		notesB.setContentAreaFilled(false);
 		notesB.setFocusPainted(false);
 		notesB.setHorizontalTextPosition(SwingConstants.CENTER);
