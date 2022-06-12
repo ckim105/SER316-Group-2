@@ -113,7 +113,7 @@ public class DailyItemsPanel extends JPanel {
     }
     void jbInit() throws Exception {
         border1 = BorderFactory.createEtchedBorder(Color.white, Color.gray);
-        border2 = BorderFactory.createEtchedBorder(Color.white, new Color(161, 161, 161));
+        border2 = BorderFactory.createEtchedBorder(Color.gray, new Color(48, 83, 164));
         this.setLayout(borderLayout1);
         splitPane.setOrientation(JSplitPane.HORIZONTAL_SPLIT);
         splitPane.setBorder(null);
@@ -122,8 +122,8 @@ public class DailyItemsPanel extends JPanel {
         //calendar.setMinimumSize(new Dimension(200, 170));
         mainPanel.setLayout(borderLayout3);
         editorsPanel.setLayout(cardLayout1);
-        statusPanel.setBackground(Color.black);
-        statusPanel.setForeground(Color.white);
+        statusPanel.setBackground(Color.gray);
+        statusPanel.setForeground(Color.gray);
         statusPanel.setMinimumSize(new Dimension(14, 24));
         statusPanel.setPreferredSize(new Dimension(14, 24));
         statusPanel.setLayout(borderLayout4);
@@ -131,7 +131,7 @@ public class DailyItemsPanel extends JPanel {
         currentDateLabel.setForeground(Color.white);
         currentDateLabel.setText(CurrentDate.get().getFullDateString());
         borderLayout4.setHgap(4);
-        controlPanel.setBackground(new Color(230, 230, 230));
+        controlPanel.setBackground(new Color(48, 83, 164));
         controlPanel.setBorder(border2);
         controlPanel.setMinimumSize(new Dimension(20, 170));
         controlPanel.setPreferredSize(new Dimension(205, 170));
@@ -139,7 +139,7 @@ public class DailyItemsPanel extends JPanel {
         //controlPanel.setSize(controlPanel.getMaximumSize());
         calendar.setFont(new java.awt.Font("Dialog", 0, 11));
         calendar.setMinimumSize(new Dimension(0, 168));
-        toggleToolBar.setBackground(new Color(215, 225, 250));
+        toggleToolBar.setBackground(new Color(48, 83, 164));
         toggleToolBar.setRequestFocusEnabled(false);
         toggleToolBar.setFloatable(false);
         cmainPanel.setLayout(borderLayout5);
