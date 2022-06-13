@@ -200,8 +200,8 @@ Answer as a team!
 #### Team member D -- Chang Suk Kim:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - link1
-    - link2
+    - [link1](https://github.com/ckim105/SER316-Group-2/pull/26)
+    - [link2](https://github.com/ckim105/SER316-Group-2/pull/20)
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
@@ -210,8 +210,9 @@ Answer as a team!
 
   **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
-    - link1
-    - link2
+    - [link1](https://github.com/ckim105/SER316-Group-2/pull/24)
+    - [link2](https://github.com/ckim105/SER316-Group-2/pull/23)
+    - [link3](https://github.com/ckim105/SER316-Group-2/pull/33)
 
   **How did you contribute to Static Analysis -- Sprint 3:
 
@@ -220,7 +221,7 @@ Answer as a team!
  
  **What was your main contribution to the Quality Policy documentation?:
 
-    - info
+    - I adhered to the guidelines in the Quality Policy. I reviewed and tested PR's from the team.
     
 #### Team member E -- Anna Lehner:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
