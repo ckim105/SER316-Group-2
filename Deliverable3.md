@@ -27,7 +27,7 @@ Document your Sprint Planning here. Also check the kickoff document for more det
 
 **Why did you add these US, why do you think you can get them done in the next Sprint?**
 
-> We added these User Stories because it will finalize our features to turn Memoranda in ScrumBox
+> We added these User Stories because it will finalize our features to turn Memoranda in ScrumBox. We think we can get them done because we have laid the groundwork in the first two scrums and are ready for the final steps.
 
 **Why do you think these fit well with your Sprint goal? (details)**
 
