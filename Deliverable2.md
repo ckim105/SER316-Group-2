@@ -121,8 +121,108 @@ Answer as a team!
 ### Contributions:
 
 > In this section I want you to point me to your main contributions (each of you individually). Some of the topcs are not needed for the first deliverables (you should know which things you should have done in this Sprint, if you don't then you have probably missed something):
+> 
+#### Team member A -- Fayez Mehdad:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-#### Team member A -- replace this with your name:
+    - link1
+    - link2
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - info
+    
+#### Team member B -- Sumbal Khan:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - link1
+    - link2
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - info
+    
+#### Team member C -- Kevin Nguyen:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - link1
+    - link2
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - info
+    
+#### Team member D -- Chang Suk Kim:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - link1
+    - link2
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - info
+    
+#### Team member E -- Anna Lehner:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
     - link1
