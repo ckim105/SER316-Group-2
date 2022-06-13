@@ -50,7 +50,7 @@ public class EventDialog extends JDialog implements WindowListener {
     public JLabel header = new JLabel();
     JPanel eventPanel = new JPanel(new GridBagLayout());
     GridBagConstraints gbc;
-    JLabel lblTime = new JLabel();
+    JLabel lblSinceDuration = new JLabel();
     public JSpinner timeSpin = new JSpinner(new SpinnerDateModel(new Date(), null, null, Calendar.MINUTE));
     JLabel lblText = new JLabel();
     public JTextField textField = new JTextField();
@@ -100,26 +100,133 @@ public class EventDialog extends JDialog implements WindowListener {
         headerPanel.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 5));
         header.setFont(new java.awt.Font("Dialog", 0, 20));
         header.setForeground(new Color(0, 0, 124));
-        header.setText(Local.getString("Event"));
+        header.setText(Local.getString("Sprint"));
         header.setIcon(new ImageIcon(main.java.memoranda.ui.EventDialog.class.getResource(
-            "/ui/icons/event48.png")));
+            "/ui/icons/events.png")));
         headerPanel.add(header);
         
+        //new days durantion
+        lblSinceDuration.setText(Local.getString("From"));
+        lblSinceDuration.setMinimumSize(new Dimension(70, 16));
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0; gbc.gridy = 0;
+        gbc.insets = new Insets(10, 10, 5, 10);
+        gbc.anchor = GridBagConstraints.WEST;
+        eventPanel.add(lblSinceDuration, gbc);
+    
+        Date sd = (Date) startDate.getModel().getValue();
+        Date ed = (Date) endDate.getModel().getValue();
+        if (sd.after(ed)) {
+            endDate.getModel().setValue(sd);
+            ed = sd;
+        }
+        startCalFrame.cal.set(new CalendarDate(sd));
+        startDate.setPreferredSize(new Dimension(80, 24));
+        //Added by (jcscoobyrs) on 12-Nov-2003 at 15:34:27 PM
+        //---------------------------------------------------
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        sdf = (SimpleDateFormat)DateFormat.getDateInstance(DateFormat.SHORT);
+        startDate.setEditor(new JSpinner.DateEditor(startDate,
+                sdf.toPattern()));
+        //---------------------------------------------------
+        gbc = new GridBagConstraints();
+        gbc.gridx = 1; gbc.gridy = 0;
+        gbc.insets = new Insets(5, 0, 5, 5);
+        gbc.anchor = GridBagConstraints.WEST;
+        eventPanel.add(startDate, gbc);
+        setStartDateB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                setStartDateB_actionPerformed(e);
+            }
+        });
+        setStartDateB.setIcon(
+                new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/calendar.png")));
+        setStartDateB.setText("");
+        setStartDateB.setPreferredSize(new Dimension(24, 24));
+    
+        gbc = new GridBagConstraints();
+        gbc.gridx = 2; gbc.gridy = 0;
+        gbc.insets = new Insets(5, 0, 5, 5);
+        gbc.anchor = GridBagConstraints.WEST;
+        eventPanel.add(setStartDateB, gbc);
+    
+        enableEndDateCB.setHorizontalAlignment(SwingConstants.RIGHT);
+        enableEndDateCB.setText(Local.getString("Till"));
+        enableEndDateCB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                enableEndDateCB_actionPerformed(e);
+            }
+        });
+        gbc = new GridBagConstraints();
+        gbc.gridx = 3; gbc.gridy = 0;
+        gbc.insets = new Insets(5, 0, 5, 5);
+        gbc.anchor = GridBagConstraints.EAST;
+        eventPanel.add(enableEndDateCB, gbc);
+        endDate.setPreferredSize(new Dimension(80, 24));
+        //Added by (jcscoobyrs) on 12-Nov-2003 at 15:34:27 PM
+        //---------------------------------------------------
+        endDate.setEditor(new JSpinner.DateEditor(endDate, sdf.toPattern()));
+        //---------------------------------------------------
+        endDate.addChangeListener(new ChangeListener() {
+            public void stateChanged(ChangeEvent e) {
+                if (ignoreEndChanged)
+                    return;
+                ignoreEndChanged = true;
+                Date sd = (Date) startDate.getModel().getValue();
+                Date ed = (Date) endDate.getModel().getValue();
+                if (sd.after(ed)) {
+                    endDate.getModel().setValue(sd);
+                    ed = sd;
+                }
+                endCalFrame.cal.set(new CalendarDate(ed));
+                ignoreEndChanged = false;
+            }
+        });
+    
+        gbc = new GridBagConstraints();
+        gbc.gridx = 4; gbc.gridy = 0;
+        gbc.insets = new Insets(5, 0, 5, 5);
+        gbc.anchor = GridBagConstraints.WEST;
+        eventPanel.add(endDate, gbc);
+        setEndDateB.setMinimumSize(new Dimension(24, 24));
+        setEndDateB.setPreferredSize(new Dimension(24, 24));
+        setEndDateB.setText("");
+        setEndDateB.setIcon(
+                new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/calendar.png")));
+        setEndDateB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                setEndDateB_actionPerformed(e);
+            }
+        });
+        gbc = new GridBagConstraints();
+        gbc.gridx = 5; gbc.gridy = 0;
+        gbc.insets = new Insets(5, 0, 5, 5);
+        gbc.anchor = GridBagConstraints.WEST;
+        eventPanel.add(setEndDateB, gbc);
+    
+        startDate.setEnabled(true);
+        setStartDateB.setEnabled(true);
+        lblSince.setEnabled(true);
+        enableEndDateCB.setEnabled(true);
+        
+        /*
         // Build eventPanel
-        lblTime.setText(Local.getString("Time"));
+        lblTime.setText(Local.getString("Duration"));       //changed from Time
         lblTime.setMinimumSize(new Dimension(60, 24));
         gbc = new GridBagConstraints();
         gbc.gridx = 0; gbc.gridy = 0;
         gbc.insets = new Insets(10, 10, 5, 10);
         gbc.anchor = GridBagConstraints.WEST;
-        eventPanel.add(lblTime, gbc);
-        timeSpin.setPreferredSize(new Dimension(60, 24));
+        eventPanel.add(lblTime, gbc);*/
+        
+        /*timeSpin.setPreferredSize(new Dimension(60, 24));
         gbc = new GridBagConstraints();
         gbc.gridx = 1; gbc.gridy = 0;
         gbc.insets = new Insets(10, 0, 5, 0);
         gbc.anchor = GridBagConstraints.WEST;
-        eventPanel.add(timeSpin, gbc);
-        lblText.setText(Local.getString("Text"));
+        eventPanel.add(timeSpin, gbc);*/
+        
+        lblText.setText(Local.getString("Sprint Name"));
         lblText.setMinimumSize(new Dimension(120, 24));
         gbc = new GridBagConstraints();
         gbc.gridx = 0; gbc.gridy = 1;
@@ -137,6 +244,7 @@ public class EventDialog extends JDialog implements WindowListener {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         eventPanel.add(textField, gbc);
         
+        /*
         // Build RepeatPanel
         repeatBorder = new TitledBorder(BorderFactory.createLineBorder(
         Color.gray, 1), Local.getString("Repeat"));
@@ -181,7 +289,7 @@ public class EventDialog extends JDialog implements WindowListener {
         gbc.insets = new Insets(5, 5, 5, 40);
         gbc.anchor = GridBagConstraints.WEST;
         repeatPanel.add(lblDays, gbc);
-        lblSince.setText(Local.getString("Since"));
+        /*lblSince.setText(Local.getString("Since"));
         lblSince.setMinimumSize(new Dimension(70, 16));
         gbc = new GridBagConstraints();
         gbc.gridx = 4; gbc.gridy = 1;
@@ -208,7 +316,7 @@ public class EventDialog extends JDialog implements WindowListener {
         
         //Added by (jcscoobyrs) on 12-Nov-2003 at 15:34:27 PM
 		//---------------------------------------------------
-		SimpleDateFormat sdf = new SimpleDateFormat();
+		sdf = new SimpleDateFormat();
 		sdf = (SimpleDateFormat)DateFormat.getDateInstance(DateFormat.SHORT);
         startDate.setEditor(new JSpinner.DateEditor(startDate, 
         	sdf.toPattern()));
@@ -252,6 +360,7 @@ public class EventDialog extends JDialog implements WindowListener {
         gbc.insets = new Insets(5, 0, 5, 40);
         gbc.anchor = GridBagConstraints.WEST;
         repeatPanel.add(weekdaysCB, gbc);
+        /*
         enableEndDateCB.setHorizontalAlignment(SwingConstants.RIGHT);
         enableEndDateCB.setText(Local.getString("Till"));
         enableEndDateCB.addActionListener(new java.awt.event.ActionListener() {
@@ -294,6 +403,7 @@ public class EventDialog extends JDialog implements WindowListener {
         gbc.anchor = GridBagConstraints.EAST;
 		repeatPanel.add(workingDaysOnlyCB, gbc);
 		// -------------------------------------
+        /*
         gbc = new GridBagConstraints();
         gbc.gridx = 5; gbc.gridy = 2;
         gbc.insets = new Insets(5, 0, 5, 5);
@@ -356,7 +466,7 @@ public class EventDialog extends JDialog implements WindowListener {
         repeatRBGroup.add(dailyRepeatRB);
         repeatRBGroup.add(weeklyRepeatRB);
         repeatRBGroup.add(monthlyRepeatRB);
-        repeatRBGroup.add(yearlyRepeatRB);
+        repeatRBGroup.add(yearlyRepeatRB);*/
         
         // Build ButtonsPanel
         okB.setMaximumSize(new Dimension(100, 26));
@@ -413,13 +523,13 @@ public class EventDialog extends JDialog implements WindowListener {
         dayOfMonthSpin.setEnabled(false);
         daySpin.setEnabled(false);
         weekdaysCB.setEnabled(false);
-        startDate.setEnabled(false);
-        setStartDateB.setEnabled(false);
-        lblSince.setEnabled(false);
-        endDate.setEnabled(false);
-        setEndDateB.setEnabled(false);
-        enableEndDateCB.setEnabled(false);
-		enableEndDateCB.setSelected(false);
+        //startDate.setEnabled(false);
+        //setStartDateB.setEnabled(false);
+        //lblSince.setEnabled(false);
+        //endDate.setEnabled(false);
+        //setEndDateB.setEnabled(false);
+        //enableEndDateCB.setEnabled(false);
+		//enableEndDateCB.setSelected(false);
 		workingDaysOnlyCB.setEnabled(false);
 		workingDaysOnlyCB.setSelected(false);		
     }
