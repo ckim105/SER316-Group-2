@@ -4,10 +4,12 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
+import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JEditorPane;
 import javax.swing.JFileChooser;
@@ -49,6 +51,7 @@ public class AgendaPanel extends JPanel {
 	JToolBar toolBar = new JToolBar();
 	JButton historyForwardB = new JButton();
 	JButton export = new JButton();
+	JButton createTeamB = new JButton();
 	JEditorPane viewer = new JEditorPane("text/html", "");
 	String[] priorities = {"Muy Alta","Alta","Media","Baja","Muy Baja"};
 	JScrollPane scrollPane = new JScrollPane();
@@ -72,6 +75,7 @@ public class AgendaPanel extends JPanel {
 			ex.printStackTrace();
 		}
 	}
+	
 	void jbInit() throws Exception {
 		expandedTasks = new ArrayList();
 
@@ -230,6 +234,22 @@ public class AgendaPanel extends JPanel {
 		historyForwardB.setMinimumSize(new Dimension(24, 24));
 		historyForwardB.setMaximumSize(new Dimension(24, 24));
 		historyForwardB.setText("");
+		
+	    createTeamB.setIcon(
+	            new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/todo_new.png")));
+	    createTeamB.setEnabled(true);
+	    createTeamB.setMaximumSize(new Dimension(24, 24));
+	    createTeamB.setMinimumSize(new Dimension(24, 24));
+	    createTeamB.setToolTipText(Local.getString("Create New User Story"));
+	    createTeamB.setRequestFocusEnabled(false);
+	    createTeamB.setPreferredSize(new Dimension(24, 24));
+	    createTeamB.setFocusable(false);
+	    createTeamB.addActionListener(new java.awt.event.ActionListener() {
+	            public void actionPerformed(ActionEvent e) {
+	            	createTeamB_actionPerformed(e);
+	            }
+	        });
+	    createTeamB.setBorderPainted(false);
 
 		this.setLayout(borderLayout1);
 		scrollPane.getViewport().setBackground(Color.white);
@@ -238,7 +258,10 @@ public class AgendaPanel extends JPanel {
 		this.add(scrollPane, BorderLayout.CENTER);
 		toolBar.add(historyBackB, null);
 		toolBar.add(historyForwardB, null);
+		toolBar.add(createTeamB, null);
 		toolBar.addSeparator(new Dimension(8, 24));
+		
+		
 
 		this.add(toolBar, BorderLayout.NORTH);
 
@@ -273,6 +296,7 @@ public class AgendaPanel extends JPanel {
 			}
 		});
 		refresh(CurrentDate.get());
+		
 
 		//        agendaPPMenu.setFont(new java.awt.Font("Dialog", 1, 10));
 		//        agendaPPMenu.add(ppShowActiveOnlyChB);
@@ -310,6 +334,9 @@ public class AgendaPanel extends JPanel {
 
 	public void setActive(boolean isa) {
 		isActive = isa;
+	}
+	void createTeamB_actionPerformed(ActionEvent e) {
+		new main.java.memoranda.ui.NewTeamPanel();
 	}
 
 	//	void toggleShowActiveOnly_actionPerformed(ActionEvent e) {
