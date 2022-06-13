@@ -44,17 +44,25 @@ I would also advise you to already fill out the Contributions section (End of sp
 
 | Date  | Who did not attend  |Meeting notes (very brief)   | Burndown Info (on track, ahead behind is enough) | TravisCI info (does the master pass) | Additional Info  |
 |---|---|---|---|--|--|
-|06/03/22|Anna|Met to discuss and start on Sprint 2|   |  |  |
-|   |   |   |   |  |  |
-|   |   |   |   |  |  |
+|06/03/2022|Anna|Setup of Sprint 2 and finalizing User Stories|On track|Master passes|Zoom meeting|
+|06/05/2022|Anna|Team is working on completeing the first phase of User Stories|On track|Master passes|Standup meeting|
+|06/08/2022|Anna|Team is working on completing the second phase of User Stories|On track|Master passes|Standup Meeting|
+|06/10/2022|Anna|Team is working on completing the second phase of User Stories|On track|Master passes|Standup meeting|
+|06/12/2022|Everyone|Completed Sprint 2 and planning Sprint 3 User Stories|On track|Master passes|Zoom meeting|
 
 ### Meeting Summary:
 
 > Add rows as needed and add the number how many meetings for each team member:
 
-   Name1 : Num Meetings
+Sumbal Khan : 5
 
-   Name2 : Num Meetings
+Kevin Nguyen : 5
+
+Chang Suk Kim : 5
+
+Fayez Mehdad : 5
+
+Anna Lehner : 1
 
 
 ## 3: After the Sprint
@@ -68,16 +76,15 @@ Answer as a team!
 
 **What do you think is the value you created this Sprint?**
 
-> Your Answer
+> The value we created this sprint is that we transformed memoranda so it represents a Scrumboard. The program now resembles the basic components of a Scrumboard application with sprints, tasks, and a backlog. We hope to iterate it further during Sprint 3.
 
 **Do you think you worked enough and that you did what was expected of you?**
 
-> Your Answer
+> As a team we worked towards the Sprint goal but since we had the wrong sprint end date, some team members were caught off-guard. Overall, most of the user stories were completed in Sprint 2.
 
 **Would you say you met the customers’ expectations? Why, why not?**
 
-> Your Answer
-
+> Since this sprint focused on changing memoranda into a scrumboard and to focus on the UI, we did meet the customers’ expectation towards that goal. A customer is now able to create a board, a sprint and User Stories/Tasks and thus moving towards meeting the customer requirements. 
 
 ### Sprint Retrospective
 
@@ -85,31 +92,31 @@ Answer as a team!
 
 **Did you meet your sprint goal?**
 
-> Your Answer
+> Yes we did meet the sprint goal because it focused on the UI and thus we changed memoranda so it represents a scrumboard instead. 
 
 **Did you complete all stories on your Spring Backlog?**
 
-> Your Answer
+> Yes, we completed all of the User Stories in Sprint 2
 
 **If not, what went wrong?**
 
-> Your Answer
+> We made an improvement from Sprint 1. We are hoping that Sprint 3 will be consistent
 
 **Did you work at a consistent rate of speed, or velocity? (Meaning did you work during the whole Sprint or did you start working when the deadline approached.)**
 
-> Your Answer
+> There were members who worked in the beginning and others who worked towards the end of the sprint. There was also a member who worked consistently throughout. So the team was scattered when it came to their individual velocity. However, the breakdown chart is an improvement from Sprint 1 and we hope to accomplish all of the User Stories in Sprint 3.
 
 **Did you deliver business value?**
 
-> Your Answer
+> Yes, business value was delivered because the memoranda now looks more like a scrumboard. Also, a user can create a user story/task.
 
 **Are there things the team thinks it can do better in the next Sprint?**
 
-> Your Answer
+> Yes, better plan our sprints so we are able to do retro and review on time. There were also a couple of project requirements that we could have made into user stories such as unit tests so they are better tracked. So overall, we can better track our work/what the project wants us to focus on for that specific sprint and in addition of what we had discussed in Sprint 1 retro. 
 
 **How do you feel at this point? Get a pulse on the optimism of the team.**
 
-> Your Answer
+> We are making progress and are hopeful for the last stretch of the project. The team feels like we need to focus in on Sprint 3 to ensure we make needed progress to complete the project on time. 
 
 ### Contributions:
 
@@ -141,15 +148,17 @@ Answer as a team!
     - info
   
 ## 4: Checklist for you to see if you are done
-- [ ] Filled out the complete form from above, all fields are filled and written in full sentences
-- [ ] Read the kickoff again to make sure you have all the details
-- [ ] User Stories that were not completed, were left in the Sprint and a copy created
-- [ ] Your Quality Policies are accurate and up to date
-- [ ] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
-  - [ ] Team member 1
-  - [ ] Team member 2
-- [ ] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
-  - [ ] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
-  - [ ] All User Stories have acceptance tests
-  - [ ] User Stories in your new Sprint Backlog have initial tasks which are in New
-  - [ ] You know how to proceed
+- [x] Filled out the complete form from above, all fields are filled and written in full sentences
+- [x] Read the kickoff again to make sure you have all the details
+- [x] User Stories that were not completed, were left in the Sprint and a copy created
+- [x] Your Quality Policies are accurate and up to date
+- [x] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
+  - [x] Kevin Nguyen
+  - [x] John Kim
+  - [x] Fayez Mehdad
+  - [x] Sumbal Khan
+- [x] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
+  - [x] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
+  - [x] All User Stories have acceptance tests
+  - [x] User Stories in your new Sprint Backlog have initial tasks which are in New
+  - [x] You know how to proceed
