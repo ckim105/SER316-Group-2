@@ -225,7 +225,7 @@ Answer as a team!
 #### Team member E -- Anna Lehner:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - link1
+    - [link1](https://github.com/ckim105/SER316-Group-2/commit/a3342542387753eb18b86eb72adf6e448e908717)
     - link2
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
@@ -257,6 +257,7 @@ Answer as a team!
   - [x] John Kim
   - [x] Fayez Mehdad
   - [x] Sumbal Khan
+  - [X] Anna Lehner
 - [x] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
   - [x] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
   - [x] All User Stories have acceptance tests
