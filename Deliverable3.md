@@ -7,9 +7,9 @@
 
 **Sprint Number:** 3
 
-**Scrum Master**: Anna Lehner
+**Scrum Master**: Chang Suk Kim
 
-**Git Master**: Chang Suk Kim
+**Git Master**: Anna Lehner
 
 ### Sprint Planning (For Sprint 1-3)
 Document your Sprint Planning here. Also check the kickoff document for more details on what needs to be done. This is just the documentation. 
