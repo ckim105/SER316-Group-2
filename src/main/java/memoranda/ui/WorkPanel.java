@@ -104,7 +104,7 @@ public class WorkPanel extends JPanel {
 		eventsB.setContentAreaFilled(false);
 		eventsB.setFocusPainted(false);
 		eventsB.setHorizontalTextPosition(SwingConstants.CENTER);
-		eventsB.setText(Local.getString("EVENTS"));
+		eventsB.setText(Local.getString("SPRINT"));
 		eventsB.setVerticalAlignment(SwingConstants.TOP);
 		eventsB.setVerticalTextPosition(SwingConstants.BOTTOM);
 		eventsB.addActionListener(new java.awt.event.ActionListener() {
