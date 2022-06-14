@@ -175,18 +175,21 @@ Answer as a team!
 #### Team member C -- Kevin Nguyen:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - link1
-    - link2
+    - US#47 Task 1: https://github.com/ckim105/SER316-Group-2/commit/cccc25135b8305a28263f19ed86ca7f5d3b5cdcc
+    - US#47 Task 2: https://github.com/ckim105/SER316-Group-2/commit/09034b2a3addf587cf3446f5040653676c9b3ea6
+    - US#47 Task 3: https://github.com/ckim105/SER316-Group-2/commit/be0180d970557d7b54ab3d3e12c2c3fe1b3e7088
+    - US#42: https://github.com/ckim105/SER316-Group-2/commit/18a42735be0f706d1d22e4555ae8f45ee2a6c331
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
-    - link1
-    - link2
+    - US#47 Blackbox Test: https://github.com/ckim105/SER316-Group-2/commit/c3a92e8c3a1dde095b89f8de2ef14e7b2a02a804
+    - US#47 Whitebox Test: https://github.com/ckim105/SER316-Group-2/commit/eeb579b60fc2ecbd6bb6b08bd100e6e005bacbe8
 
   **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
-    - link1
-    - link2
+    - US#47 Task 1 Developer Checklist: https://github.com/ckim105/SER316-Group-2/pull/18
+    - US#47 Task 2 Developer Checklist: https://github.com/ckim105/SER316-Group-2/pull/19
+    - Reviewer Checklist (I Merge): https://github.com/ckim105/SER316-Group-2/pull/22
 
   **How did you contribute to Static Analysis -- Sprint 3:
 
@@ -195,7 +198,7 @@ Answer as a team!
  
  **What was your main contribution to the Quality Policy documentation?:
 
-    - info
+    - I added in a lot of the policies for the Quality Policy such as Code Review, Static Analysis, and Continuous Integration. In order to implement code review, whenever I merged a task branch into dev, I included the Developer Checklist and how to test the code. When I reviewed a pull request, I included a Reviewer Checklist.
     
 #### Team member D -- Chang Suk Kim:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
