@@ -44,17 +44,25 @@ I would also advise you to already fill out the Contributions section (End of sp
 
 | Date  | Who did not attend  |Meeting notes (very brief)   | Burndown Info (on track, ahead behind is enough) | TravisCI info (does the master pass) | Additional Info  |
 |---|---|---|---|--|--|
-|06/03/22|Anna|Met to discuss and start on Sprint 2|   |  |  |
-|   |   |   |   |  |  |
-|   |   |   |   |  |  |
+|06/03/2022|Anna|Setup of Sprint 2 and finalizing User Stories|On track|Master passes|Zoom meeting|
+|06/05/2022|Anna|Team is working on completeing the first phase of User Stories|On track|Master passes|Standup meeting|
+|06/08/2022|Anna|Team is working on completing the second phase of User Stories|On track|Master passes|Standup Meeting|
+|06/10/2022|Anna|Team is working on completing the second phase of User Stories|On track|Master passes|Standup meeting|
+|06/12/2022|Everyone|Completed Sprint 2 and planning Sprint 3 User Stories|On track|Master passes|Zoom meeting|
 
 ### Meeting Summary:
 
 > Add rows as needed and add the number how many meetings for each team member:
 
-   Name1 : Num Meetings
+Sumbal Khan : 5
 
-   Name2 : Num Meetings
+Kevin Nguyen : 5
+
+Chang Suk Kim : 5
+
+Fayez Mehdad : 5
+
+Anna Lehner : 1
 
 
 ## 3: After the Sprint
@@ -68,16 +76,15 @@ Answer as a team!
 
 **What do you think is the value you created this Sprint?**
 
-> Your Answer
+> The value we created this sprint is that we transformed memoranda so it represents a Scrumboard. The program now resembles the basic components of a Scrumboard application with sprints, tasks, and a backlog. We hope to iterate it further during Sprint 3.
 
 **Do you think you worked enough and that you did what was expected of you?**
 
-> Your Answer
+> As a team we worked towards the Sprint goal but since we had the wrong sprint end date, some team members were caught off-guard. Overall, most of the user stories were completed in Sprint 2.
 
 **Would you say you met the customers’ expectations? Why, why not?**
 
-> Your Answer
-
+> Since this sprint focused on changing memoranda into a scrumboard and to focus on the UI, we did meet the customers’ expectation towards that goal. A customer is now able to create a board, a sprint and User Stories/Tasks and thus moving towards meeting the customer requirements. 
 
 ### Sprint Retrospective
 
@@ -85,37 +92,37 @@ Answer as a team!
 
 **Did you meet your sprint goal?**
 
-> Your Answer
+> Yes we did meet the sprint goal because it focused on the UI and thus we changed memoranda so it represents a scrumboard instead. 
 
 **Did you complete all stories on your Spring Backlog?**
 
-> Your Answer
+> Yes, we completed all of the User Stories in Sprint 2
 
 **If not, what went wrong?**
 
-> Your Answer
+> We made an improvement from Sprint 1. We are hoping that Sprint 3 will be consistent
 
 **Did you work at a consistent rate of speed, or velocity? (Meaning did you work during the whole Sprint or did you start working when the deadline approached.)**
 
-> Your Answer
+> There were members who worked in the beginning and others who worked towards the end of the sprint. There was also a member who worked consistently throughout. So the team was scattered when it came to their individual velocity. However, the breakdown chart is an improvement from Sprint 1 and we hope to accomplish all of the User Stories in Sprint 3.
 
 **Did you deliver business value?**
 
-> Your Answer
+> Yes, business value was delivered because the memoranda now looks more like a scrumboard. Also, a user can create a user story/task.
 
 **Are there things the team thinks it can do better in the next Sprint?**
 
-> Your Answer
+> Yes, better plan our sprints so we are able to do retro and review on time. There were also a couple of project requirements that we could have made into user stories such as unit tests so they are better tracked. So overall, we can better track our work/what the project wants us to focus on for that specific sprint and in addition of what we had discussed in Sprint 1 retro. 
 
 **How do you feel at this point? Get a pulse on the optimism of the team.**
 
-> Your Answer
+> We are making progress and are hopeful for the last stretch of the project. The team feels like we need to focus in on Sprint 3 to ensure we make needed progress to complete the project on time. 
 
 ### Contributions:
 
 > In this section I want you to point me to your main contributions (each of you individually). Some of the topcs are not needed for the first deliverables (you should know which things you should have done in this Sprint, if you don't then you have probably missed something):
-
-#### Team member A -- replace this with your name:
+> 
+#### Team member A -- Fayez Mehdad:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
     - link1
@@ -139,17 +146,124 @@ Answer as a team!
  **What was your main contribution to the Quality Policy documentation?:
 
     - info
+    
+#### Team member B -- Sumbal Khan:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - link1
+    - link2
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - info
+    
+#### Team member C -- Kevin Nguyen:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - US#47 Task 1: https://github.com/ckim105/SER316-Group-2/commit/cccc25135b8305a28263f19ed86ca7f5d3b5cdcc
+    - US#47 Task 2: https://github.com/ckim105/SER316-Group-2/commit/09034b2a3addf587cf3446f5040653676c9b3ea6
+    - US#47 Task 3: https://github.com/ckim105/SER316-Group-2/commit/be0180d970557d7b54ab3d3e12c2c3fe1b3e7088
+    - US#42: https://github.com/ckim105/SER316-Group-2/commit/18a42735be0f706d1d22e4555ae8f45ee2a6c331
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - US#47 Blackbox Test: https://github.com/ckim105/SER316-Group-2/commit/c3a92e8c3a1dde095b89f8de2ef14e7b2a02a804
+    - US#47 Whitebox Test: https://github.com/ckim105/SER316-Group-2/commit/eeb579b60fc2ecbd6bb6b08bd100e6e005bacbe8
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - US#47 Task 1 Developer Checklist: https://github.com/ckim105/SER316-Group-2/pull/18
+    - US#47 Task 2 Developer Checklist: https://github.com/ckim105/SER316-Group-2/pull/19
+    - Reviewer Checklist (I Merge): https://github.com/ckim105/SER316-Group-2/pull/22
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - I added in a lot of the policies for the Quality Policy such as Code Review, Static Analysis, and Continuous Integration. In order to implement code review, whenever I merged a task branch into dev, I included the Developer Checklist and how to test the code. When I reviewed a pull request, I included a Reviewer Checklist.
+    
+#### Team member D -- Chang Suk Kim:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - [link1](https://github.com/ckim105/SER316-Group-2/pull/26)
+    - [link2](https://github.com/ckim105/SER316-Group-2/pull/20)
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - [link1](https://github.com/ckim105/SER316-Group-2/pull/24)
+    - [link2](https://github.com/ckim105/SER316-Group-2/pull/23)
+    - [link3](https://github.com/ckim105/SER316-Group-2/pull/33)
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - I adhered to the guidelines in the Quality Policy. I reviewed and tested PR's from the team.
+    
+#### Team member E -- Anna Lehner:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - [link1](https://github.com/ckim105/SER316-Group-2/commit/a3342542387753eb18b86eb72adf6e448e908717)
+    - link2
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - info
   
 ## 4: Checklist for you to see if you are done
-- [ ] Filled out the complete form from above, all fields are filled and written in full sentences
-- [ ] Read the kickoff again to make sure you have all the details
-- [ ] User Stories that were not completed, were left in the Sprint and a copy created
-- [ ] Your Quality Policies are accurate and up to date
-- [ ] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
-  - [ ] Team member 1
-  - [ ] Team member 2
-- [ ] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
-  - [ ] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
-  - [ ] All User Stories have acceptance tests
-  - [ ] User Stories in your new Sprint Backlog have initial tasks which are in New
-  - [ ] You know how to proceed
+- [x] Filled out the complete form from above, all fields are filled and written in full sentences
+- [x] Read the kickoff again to make sure you have all the details
+- [x] User Stories that were not completed, were left in the Sprint and a copy created
+- [x] Your Quality Policies are accurate and up to date
+- [x] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
+  - [x] Kevin Nguyen
+  - [x] John Kim
+  - [x] Fayez Mehdad
+  - [x] Sumbal Khan
+  - [X] Anna Lehner
+- [x] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
+  - [x] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
+  - [x] All User Stories have acceptance tests
+  - [x] User Stories in your new Sprint Backlog have initial tasks which are in New
+  - [x] You know how to proceed

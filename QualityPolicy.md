@@ -31,7 +31,7 @@
   - [ ] No lazy classes or classes that do too little
 
 **Static Analysis**  (online: start Sprint 3, campus: start Sprint 3)
-  > Your Static Analysis policy   
+  > Developer wil go through the new code and file every time a User Story is finished to make sure there are no logical errors. CheckStyle should be implemented every time a User Story is finished to review the coding style and clearing up violations. 
 
 **Continuous Integration**  (start Sprint 3)
-  > Your Continuous Integration policy
+  > This is a system that we are already using, but whenever a user story or task is finished, the branch should be requested to merge with dev. This is to always test that it will work when merged in with dev. Dev will act as the continous working copy so that any errors that occur doesn't break master. At the end of the sprint, master will be fast-forwarded from the dev branch.

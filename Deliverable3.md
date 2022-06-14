@@ -3,35 +3,39 @@
 
 ## 1: Basic Information (needed before you start with your Sprint -- Sprint Planning)
 
-**Topic you chose:** topic name
+**Topic you chose:** Scrumboard
 
-**Sprint Number:** Nr
+**Sprint Number:** 3
 
-**Scrum Master**: Name
+**Scrum Master**: Chang Suk Kim
 
-**Git Master**: Name
+**Git Master**: Anna Lehner
 
 ### Sprint Planning (For Sprint 1-3)
 Document your Sprint Planning here. Also check the kickoff document for more details on what needs to be done. This is just the documentation. 
 
-**Sprint Goal:** Your Sprint goal
+**Sprint Goal:**
+> The goal of Sprint 3 is to complete the functionalities and features in ScrumBox so that users and teams can create their own Scrumboards
 
-**How many User Stories did you add to the Product Backlog:**  Number
+**How many User Stories did you add to the Product Backlog:**
+
+> We do not have any User Stories left in the Backlog for Sprint 3
 
 **How many User Stories did you add to this Sprint:** 
-> Answer the questions below about your Sprint Planning?
+
+> We added 8 User Stories to complete Sprint 3
 
 **Why did you add these US, why do you think you can get them done in the next Sprint?**
 
-> Your Answer
+> We added these User Stories because it will finalize our features to turn Memoranda in ScrumBox. We think we can get them done because we have laid the groundwork in the first two scrums and are ready for the final steps.
 
 **Why do you think these fit well with your Sprint goal? (details)**
 
-> Your Answer
+> The User Stories fit well with our Sprint 3 goal because it is the final stretch of work to include functionalties like adding a Sprint, Backlog, Tasks, Team members, Roles assigned to members, and a Metrics page
 
 **Do you have a rough idea what you need to do? (if the answer is no then please let me know on Slack)**
 
-> Your Answer
+> Yes, we are all ready to start Sprint 3
 
 
 
