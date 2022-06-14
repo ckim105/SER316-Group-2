@@ -70,7 +70,7 @@ Anna Lehner : 1
 ### Sprint Review
 Answer as a team!
 
-**Screen Cast link**: Your link
+**Screen Cast link**: https://youtu.be/8pKj7raYM3s 
 
 > Answer the following questions as a team. 
 
@@ -150,8 +150,8 @@ Answer as a team!
 #### Team member B -- Sumbal Khan:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - link1
-    - link2
+    - Add Decsription Field for Projects: https://github.com/ckim105/SER316-Group-2/pull/24/commits/699e0d9abd6043a75917b3a8cfde9192b81a76e6
+    - Change "project" to "New Scrumbox Project": https://github.com/ckim105/SER316-Group-2/pull/24/commits/1db06dbeef075298186f229e7a0c5b485ded6cf0
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
@@ -160,8 +160,8 @@ Answer as a team!
 
   **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
-    - link1
-    - link2
+    - Code Review in Comments: https://github.com/ckim105/SER316-Group-2/pull/19
+    - Code Review in Comments: https://github.com/ckim105/SER316-Group-2/pull/24
 
   **How did you contribute to Static Analysis -- Sprint 3:
 
@@ -195,7 +195,7 @@ Answer as a team!
  
  **What was your main contribution to the Quality Policy documentation?:
 
-    - info
+    - I followed the quality policy by completeting the codes reviews, branching off of Dev and pushing changes into dev, and ensuring there were good commit messages.  
     
 #### Team member D -- Chang Suk Kim:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
