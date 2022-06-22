@@ -97,9 +97,9 @@ public class EditTypeDialog extends JDialog {
         border5 = BorderFactory.createLineBorder(Color.gray, 1);
         titledBorder5 = new TitledBorder(border5, Local.getString("Application"));
         border6 = BorderFactory.createEmptyBorder();
-        titledBorder6 = new TitledBorder(BorderFactory.createEmptyBorder(), Local.getString("Icon")+":");
+        titledBorder6 = new TitledBorder(BorderFactory.createEmptyBorder(), Local.getString("Icon") + ":");
         border7 = BorderFactory.createEmptyBorder();
-        titledBorder7 = new TitledBorder(BorderFactory.createEmptyBorder(), Local.getString("MIME-type")+":");
+        titledBorder7 = new TitledBorder(BorderFactory.createEmptyBorder(), Local.getString("MIME-type") + ":");
         border8 = BorderFactory.createLineBorder(Color.gray, 1);
         border9 = BorderFactory.createEmptyBorder(0, 5, 0, 5);
         buttonsPanel.setLayout(flowLayout1);

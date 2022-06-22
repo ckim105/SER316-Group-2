@@ -99,7 +99,7 @@ public class AddResourceDialog extends JDialog {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         areaPanel.add(projectFileCB, gbc);
         
-        jLabel1.setText(Local.getString("Path")+": ");
+        jLabel1.setText(Local.getString("Path") + ": ");
         gbc = new GridBagConstraints();
         gbc.gridx = 0; gbc.gridy = 1;
         gbc.insets = new Insets(5, 20, 5, 5);
@@ -142,7 +142,7 @@ public class AddResourceDialog extends JDialog {
         gbc.insets = new Insets(5, 15, 5, 15);
         gbc.anchor = GridBagConstraints.WEST;
         areaPanel.add(inetShortcutRB, gbc);
-        jLabel2.setText(Local.getString("URL")+":  ");
+        jLabel2.setText(Local.getString("URL") + ":  ");
         gbc = new GridBagConstraints();
         gbc.gridx = 0; gbc.gridy = 3;
         gbc.insets = new Insets(5, 20, 5, 15);

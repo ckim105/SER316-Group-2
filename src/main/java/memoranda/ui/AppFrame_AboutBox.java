@@ -28,7 +28,7 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
   JLabel imageLabel = new JLabel();
   JLabel lblText = new JLabel();
   
-  String product = "Version "+App.VERSION_INFO + " (Build " + App.BUILD_INFO + ")";
+  String product = "Version " + App.VERSION_INFO + " (Build " + App.BUILD_INFO + ")";
   String copyright = "Copyright (c) 2022 ScrumBox Team";
   String url = App.WEBSITE_URL;
   String developersHead = Local.getString("Developers") + ":";
@@ -63,14 +63,14 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
   //Component initialization
   private void jbInit() throws Exception  {    
     String text = "<html>";
-    text += "<b>"+product+"</b><br><br>";
+    text += "<b>" + product + "</b><br><br>";
     text += copyright + "<br>" + url + "<br><br>";
     text += "<b>" + developersHead + "</b><br>";    
     for (int i = 0; i < developers.length; i++)
-        text += developers[i]+"<br>";    
+        text += developers[i] + "<br>";    
     text += "<br><b>" + othersHead + "</b><br>";    
     for (int i = 0; i < others.length; i++)
-        text += others[i]+"<br>"; 
+        text += others[i] + "<br>"; 
     
     text += "</html>";
     

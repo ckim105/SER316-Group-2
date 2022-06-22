@@ -55,7 +55,7 @@ public class FileStorage implements Storage {
         if (mHome.length() > 0) {
             JN_DOCPATH = mHome;
             /*DEBUG*/
-        	System.out.println("[DEBUG]***Memoranda storage path has set to: " +
+        	System.out.println("[DEBUG]***Memoranda storage path has set to: "  + 
         	 JN_DOCPATH);
         }
     }
@@ -117,7 +117,7 @@ public class FileStorage implements Storage {
         CalendarDate d = note.getDate();
 
         filename += note.getId();//d.getDay() + "-" + d.getMonth() + "-" + d.getYear();
-        /*DEBUG*/System.out.println("[DEBUG] Save note: "+ filename);
+        /*DEBUG*/System.out.println("[DEBUG] Save note: " +  filename);
 
         try {
             OutputStreamWriter fw =
@@ -150,7 +150,7 @@ public class FileStorage implements Storage {
             oos.close();
             ostream.close();
             long t2 = new java.util.Date().getTime();
-            System.out.println(filename+" save:"+ (t2-t1) );
+            System.out.println(filename + " save:" +  (t2-t1) );
         }
             catch (Exception ex) {
                 ex.printStackTrace();
@@ -201,7 +201,7 @@ public class FileStorage implements Storage {
             ois.close();
             istream.close();
             long t2 = new java.util.Date().getTime();
-            System.out.println(filename+" open:"+ (t2-t1) );
+            System.out.println(filename + " open:" +  (t2-t1) );
         }
         catch (Exception ex) {
             ex.printStackTrace();

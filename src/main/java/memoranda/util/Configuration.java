@@ -29,7 +29,7 @@ public class Configuration {
     catch (Exception e) {      
       File f = new File(configPath);
       new File(f.getParent()).mkdirs();      
-      /*DEBUG*/System.out.println("New configuration created: "+configPath);
+      /*DEBUG*/System.out.println("New configuration created: " + configPath);
       try {
         config.load(Configuration.class.getResourceAsStream("/util/memoranda.default.properties"));
         saveConfig();      
@@ -42,12 +42,12 @@ public class Configuration {
   }
   
   static String getConfigPath() {
-    String p = Util.getEnvDir()+"memoranda.properties";
+    String p = Util.getEnvDir() + "memoranda.properties";
     if (new File(p).exists()) 
         return p;
-    String p1 = Util.getEnvDir()+"jnotes2.properties";
+    String p1 = Util.getEnvDir() + "jnotes2.properties";
     if (new File(p1).exists()) {
-        /*DEBUG*/System.out.println(p + " not found.\n"+p1+" used instead.");
+        /*DEBUG*/System.out.println(p + " not found.\n" + p1 + " used instead.");
         return p1;
     }    
     return p;
@@ -58,13 +58,13 @@ public class Configuration {
     config.save(new FileOutputStream(configPath));
     }
     catch (Exception e) {
-     new ExceptionDialog(e, "Failed to save a configuration file:<br>"+configPath, "");
+     new ExceptionDialog(e, "Failed to save a configuration file:<br>" + configPath, "");
     }
   }
 
   public static Object get(String key) {
     if ((config.get(key)) == null) {
-        /*DEBUG*///System.out.println("Configuration: Key '"+key+"' not found.");
+        /*DEBUG*///System.out.println("Configuration: Key '" + key + "' not found.");
         return "";
     }
     return config.get(key);

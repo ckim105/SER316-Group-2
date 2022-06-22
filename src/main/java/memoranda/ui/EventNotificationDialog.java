@@ -131,7 +131,7 @@ public class EventNotificationDialog extends JFrame {
 			AudioClip clip = Applet.newAudioClip(url);
 			clip.play();
 		} catch (Exception ex) {
-			new ExceptionDialog(ex, "Error loading audioclip from "+url, "Check the location and type of audioclip file.");
+			new ExceptionDialog(ex, "Error loading audioclip from " + url, "Check the location and type of audioclip file.");
 		}
 	}
 }

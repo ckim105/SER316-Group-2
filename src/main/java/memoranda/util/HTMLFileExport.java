@@ -79,7 +79,7 @@ public class HTMLFileExport {
                     fw.close();                    
                 }
                 catch (Exception ex) {
-                    new ExceptionDialog(ex, "Cannot export file "+f.getPath(), null);
+                    new ExceptionDialog(ex, "Cannot export file " + f.getPath(), null);
                 }
         }
 	 
@@ -98,7 +98,7 @@ public class HTMLFileExport {
 				fr.close();
 			}
 			catch (Exception ex) {
-				new ExceptionDialog(ex, "Cannot read template file from "+templF, null);
+				new ExceptionDialog(ex, "Cannot read template file from " + templF, null);
 			}	
 			if (text.length() > 0)
 				return text;

@@ -151,7 +151,7 @@ public class ResourcesTable extends JTable {
                             if (mt != null) return mt.getLabel();
                             else return "unknown";
                     case 2: Date d = new Date(f.lastModified());
-                            return d;/*Local.getDateString(d, java.text.DateFormat.SHORT) +" "+
+                            return d;/*Local.getDateString(d, java.text.DateFormat.SHORT)  + " " + 
                                    Local.getTimeString(d);*/
                     case 3:return f.getPath();
                 }

@@ -63,7 +63,7 @@ public class ProjectPackager {
             zip.close();
         }
         catch (Exception ex) {
-            new ExceptionDialog(ex, "Failed to write to "+zipfile, "");
+            new ExceptionDialog(ex, "Failed to write to " + zipfile, "");
         }
     }
 
@@ -99,13 +99,13 @@ public class ProjectPackager {
                 ZipEntry ze = (ZipEntry)files.nextElement();
                 if ( ze.isDirectory() )
                 {
-                   File theDirectory = new File (JN_DOCPATH + prj.getID()+ "/" + ze.getName() );
+                   File theDirectory = new File (JN_DOCPATH + prj.getID() +  "/" + ze.getName() );
                    // create this directory (including any necessary parent directories)
                    theDirectory.mkdirs();
                    theDirectory = null;
                 }
                 if ((!ze.getName().equals("__PROJECT_INFO__")) && (!ze.isDirectory())) {
-                    FileOutputStream out = new FileOutputStream(JN_DOCPATH + prj.getID() +"/"+ ze.getName());
+                    FileOutputStream out = new FileOutputStream(JN_DOCPATH + prj.getID()  + "/" +  ze.getName());
                     InputStream inp = zip.getInputStream(ze);
                     
                     byte[] buffer = new byte[1024];
@@ -123,7 +123,7 @@ public class ProjectPackager {
             CurrentStorage.get().storeProjectManager();             
         }
         catch (Exception ex) {
-            new ExceptionDialog(ex, "Failed to read from "+zipfile, "Make sure that this file is a Memoranda project archive.");
+            new ExceptionDialog(ex, "Failed to read from " + zipfile, "Make sure that this file is a Memoranda project archive.");
         }
     }
     
@@ -139,16 +139,16 @@ public class ProjectPackager {
     {
        File[] theFiles = theDirectory.listFiles();
        File stDirectory = new File(startingDirectory);
-       System.out.println("Path="+stDirectory.getPath()+";length="+stDirectory.getPath().length() + "==>"+theFiles[0]);
+       System.out.println("Path=" + stDirectory.getPath() + ";length=" + stDirectory.getPath().length() + "==>" + theFiles[0]);
        int j = stDirectory.getPath().length();
-       for ( int i=0 ; i<theFiles.length ; i++ )
+       for ( int i=0 ; i<theFiles.length ; i++)
        {
           String sRelPath = theFiles[i].getPath().substring(j);
           if ( theFiles[i].isDirectory() )
           {
              // create a directory entry.
              // directory entries must be terminated by a slash!
-             ZipEntry theEntry = new ZipEntry("."+sRelPath+"/" );
+             ZipEntry theEntry = new ZipEntry("." + sRelPath + "/" );
              theZIPStream.putNextEntry(theEntry);
              theZIPStream.closeEntry();
 
@@ -158,7 +158,7 @@ public class ProjectPackager {
           else // regular file
           { 
             File f = theFiles[i];
-            ZipEntry ze = new ZipEntry("."+sRelPath);
+            ZipEntry ze = new ZipEntry("." + sRelPath);
             FileInputStream in = new FileInputStream(f);
             byte[] data = new byte[(int) f.length()];
             in.read(data);

@@ -57,7 +57,7 @@ public class ExportSticker {
 
                 String contents = getSticker();
                 try {
-                File file = new File(this.name+"."+src);
+                File file = new File(this.name + "." + src);
 
 
                         FileWriter fwrite=new FileWriter(file,true);
@@ -86,7 +86,7 @@ public class ExportSticker {
         String nl = System.getProperty("line.separator");
                 for (Iterator i = stickers.keySet().iterator(); i.hasNext();) {
             String id = (String)i.next();
-            result += (String)(((Element)stickers.get(id)).getValue())+nl;
+            result += (String)(((Element)stickers.get(id)).getValue()) + nl;
             }
 
                 return result;

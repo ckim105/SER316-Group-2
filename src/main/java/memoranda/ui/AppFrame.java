@@ -172,7 +172,7 @@ public class AppFrame extends JFrame {
     JMenuItem jMenuInsertDate = new JMenuItem(
             workPanel.dailyItemsPanel.editorPanel.insertDateAction);
     JMenuItem jMenuInsertTime = new JMenuItem(
-    		workPanel.dailyItemsPanel.editorPanel.insertTimeAction);
+            workPanel.dailyItemsPanel.editorPanel.insertTimeAction);
     JMenuItem jMenuInsertFile = new JMenuItem(
             workPanel.dailyItemsPanel.editorPanel.importAction);
 
@@ -993,7 +993,7 @@ public class AppFrame extends JFrame {
                             name = item.getValue();
                             notesName.put(id,name);
                     }
-                    System.out.println("id: "+id+" name: "+name);
+                    System.out.println("id: " + id + " name: " + name);
                     
                     Elements contlist = body.getChildElements("a");
                     for(int i = 0;i<(contlist.size()-1);i++){
@@ -1082,7 +1082,7 @@ public class AppFrame extends JFrame {
                     name = f.getName().substring(0,f.getName().lastIndexOf("."));	
                     Element item;
                     id=Util.generateId();
-                    System.out.println(id+" "+name+" "+content);
+                    System.out.println(id + " " + name + " " + content);
                     notesName.put(id, name);
                     notesContent.put(id, content);
                     JEditorPane p = new JEditorPane();
@@ -1090,7 +1090,7 @@ public class AppFrame extends JFrame {
                     
                     for (Map.Entry<String,String> entry : notesName.entrySet()){
                             id = entry.getKey();
-                            System.out.println(id+" "+name+" "+content);
+                            System.out.println(id + " " + name + " " + content);
                             p.setText(content);
                             HTMLDocument doc = (HTMLDocument)p.getDocument();
                             Note note = CurrentProject.getNoteList().createNoteForDate(CurrentDate.get());

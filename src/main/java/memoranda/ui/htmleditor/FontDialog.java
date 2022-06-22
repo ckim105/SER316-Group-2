@@ -229,8 +229,8 @@ public class FontDialog extends JDialog {
 		UIManager.put(
 			"ColorChooser.sampleText",
 			Local.getString("Sample Text")
-				+ " "
-				+ Local.getString("Sample Text"));
+				 +  " "
+				 +  Local.getString("Sample Text"));
 		UIManager.put("ColorChooser.okText", Local.getString("OK"));
 		UIManager.put("ColorChooser.cancelText", Local.getString("Cancel"));
 		UIManager.put("ColorChooser.resetText", Local.getString("Reset"));

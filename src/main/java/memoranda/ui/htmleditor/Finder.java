@@ -144,7 +144,7 @@ public class Finder extends Thread {
             matcher = pattern.matcher(text);
         }
 
-        JOptionPane.showMessageDialog(null, Local.getString("Search complete")+".");
+        JOptionPane.showMessageDialog(null, Local.getString("Search complete") + ".");
         if (showCdlg) {
             editor.toolsPanel.remove(cdlg);
             if (editor.toolsPanel.getTabCount() == 0)
