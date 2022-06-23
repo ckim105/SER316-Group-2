@@ -364,35 +364,38 @@ public class TaskListImpl implements TaskList {
     		return false;
     	}
     }
-
-    /*
-     * deprecated methods below
-     * 
+    
+    /**
+     * Updates the details of the parent when subtask changes
+     *
+     * @param t : Task that is changed
      */
-                    
-//    public void adjustParentTasks(Task t) {
-//    	if ((t.getParent() == null) || (t.getParent().equals(""))){
-//    		return;
-//    	}
-//    	else {
-//    		Task p = getTask(t.getParent());
-//    		
-//    		long totalEffort = calculateTotalEffortFromSubTasks(p);
-//    		
-//    		if(totalEffort > p.getEffort()) {
-//    			p.setEffort(totalEffort);
-//    		}
-//    		if(t.getStartDate().before(p.getStartDate())) {
-//    			p.setStartDate(t.getStartDate());
-//    		}
-//    		if(t.getEndDate().after(p.getEndDate())) {
-//    			p.setEndDate(t.getEndDate());
-//    		}
-//    		
-//        	if (!((p.getParent() == null) || (p.getParent().equals("")))){
-//        		// still has parent, go up the tree
-//        		adjustParentTasks(p);
-//        	}    		
-//    	}
-//    }
+    public void adjustParentTasks(Task t) {
+    	if ((t.getParentTask() == null) || (t.getParentTask().equals(""))){
+    		return;     //if there are no parent task
+    	}
+    	else {
+    		Task p = t.getParentTask();     //get the parent task
+
+    		long totalEffort = calculateTotalEffortFromSubTasks(p); //finds the total effort
+            long[] res = calculateCompletionFromSubTasks(p);    //finds the completion
+            int thisProgress = (int) Math.round((((double)res[0] / (double)res[1]) * 100));
+            p.setProgress(thisProgress);    //sets progress
+
+    		if(totalEffort > p.getEffort()) {
+    			p.setEffort(totalEffort);   //sets effort
+    		}
+    		if(t.getStartDate().before(p.getStartDate())) {
+    			p.setStartDate(t.getStartDate());       //updates start date
+    		}
+    		if(t.getEndDate().after(p.getEndDate())) {
+    			p.setEndDate(t.getEndDate());       //updates end date
+    		}
+
+        	if (!((p.getParentTask() == null) || (p.getParentTask().equals("")))){
+        		// still has parent, go up the tree
+        		adjustParentTasks(p);       //recursion
+        	}
+    	}
+    }
 }

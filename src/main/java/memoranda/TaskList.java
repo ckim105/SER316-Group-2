@@ -32,7 +32,7 @@ public interface TaskList {
     public Collection getAllSubTasks(String taskId);
     public Collection getActiveSubTasks(String taskId,CalendarDate date);
     
-//    public void adjustParentTasks(Task t);
+    public void adjustParentTasks(Task t);
     
     public long calculateTotalEffortFromSubTasks(Task t);
     public CalendarDate getLatestEndDateFromSubTasks(Task t);
