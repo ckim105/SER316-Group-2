@@ -15,6 +15,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.URL;
+import org.json.*;
 
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
@@ -59,7 +60,13 @@ public class FileStorage implements Storage {
         	 JN_DOCPATH);
         }
     }
-
+    
+    /**
+     * Saves the document both as XML and as JSON
+     *
+     * @param doc
+     * @param filePath
+     */
     public static void saveDocument(Document doc, String filePath) {
         /**
          * @todo: Configurable parameters
@@ -72,6 +79,15 @@ public class FileStorage implements Storage {
             OutputStreamWriter fw =
                 new OutputStreamWriter(new FileOutputStream(filePath), "UTF-8");
             fw.write(doc.toXML());
+            
+            String newFileLoc = filePath+".JSON"; //create new extension
+            OutputStreamWriter fw2 = new OutputStreamWriter(new FileOutputStream
+                    (newFileLoc),"UTF-8");      //create new OutputStreamWriter
+            String jsonString = XML.toJSONObject(doc.toXML()).toString(4); //Convert to JSON
+            fw2.write(jsonString); //write the json file
+            
+            fw2.flush();
+            fw2.close();
             fw.flush();
             fw.close();
         }
@@ -82,6 +98,7 @@ public class FileStorage implements Storage {
                 "");
         }
     }
+    
 
     public static Document openDocument(InputStream in) throws Exception {
         Builder builder = new Builder();
