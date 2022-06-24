@@ -50,7 +50,7 @@ public class History {
         /*System.out.println();
         for (int i = 0; i < _list.size(); i++)
             System.out.println(((HistoryItem)_list.get(i)).getDate().toString());
-        System.out.println(item.getDate().toShortString()+ " added");*/
+        System.out.println(item.getDate().toShortString() +  " added");*/
         if (_list.size() > 99)
             _list.remove(0);     
     }
@@ -68,7 +68,7 @@ public class History {
         else 
             prev = null;      
         if (p < _list.size() - 1)
-            next = _list.get(p+1);
+            next = _list.get(p + 1);
         else
             next = null;         
         return (HistoryItem)n;
@@ -131,7 +131,7 @@ public class History {
     }
 
     private static void notifyListeners(HistoryItem n) {
-        for (int i = 0; i < historyListeners.size(); i++)            
+        for (int i = 0; i < historyListeners.size(); i++)
                  ((HistoryListener) historyListeners.get(i)).historyWasRolledTo(n);
     }
 

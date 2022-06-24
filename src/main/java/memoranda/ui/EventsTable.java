@@ -123,7 +123,7 @@ public class EventsTable extends JTable {
         public Object getValueAt(int row, int col) {
            Event ev = (Event)events.get(row);
            if (col == 0)
-                //return ev.getHour()+":"+ev.getMinute();
+                //return ev.getHour() + ":" + ev.getMinute();
                 return ev.getTimeString();
            else if (col == 1)
                 return ev.getText();

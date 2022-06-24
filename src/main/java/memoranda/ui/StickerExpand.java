@@ -44,7 +44,7 @@ public class StickerExpand extends JDialog{
 	Border border1;
 	Border border2;
 	public StickerExpand(Frame frame,String txt, String backcolor, String fontcolor, String priority) {
-		super(frame, Local.getString("Sticker")+" ["+priority+"]" , true);
+		super(frame, Local.getString("Sticker") + " [" + priority + "]" , true);
 		this.txt=txt;
 		this.backGroundColor=Color.decode(backcolor);
 		this.foreGroundColor=Color.decode(fontcolor);

@@ -126,7 +126,7 @@ public class ResourcesPanel extends JPanel {
             new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/refreshres.png")));
         resPPMenu.setFont(new java.awt.Font("Dialog", 1, 10));
     ppRun.setFont(new java.awt.Font("Dialog", 1, 11));
-    ppRun.setText(Local.getString("Open resource")+"...");
+    ppRun.setText(Local.getString("Open resource") + "...");
     ppRun.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ppRun_actionPerformed(e);
@@ -144,7 +144,7 @@ public class ResourcesPanel extends JPanel {
     ppRemoveRes.setIcon(new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/removeresource.png")));
     ppRemoveRes.setEnabled(false);
     ppNewRes.setFont(new java.awt.Font("Dialog", 1, 11));
-    ppNewRes.setText(Local.getString("New resource")+"...");
+    ppNewRes.setText(Local.getString("New resource") + "...");
     ppNewRes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ppNewRes_actionPerformed(e);
@@ -235,7 +235,7 @@ public class ResourcesPanel extends JPanel {
 
         else
             msg = Local.getString("Remove") + " " + toRemove.length + " " + Local.getString("shortcuts");
-        msg +=
+        msg += 
             "\n"
             + Local.getString("Are you sure?");
         int n =
@@ -246,7 +246,7 @@ public class ResourcesPanel extends JPanel {
                 JOptionPane.YES_NO_OPTION);
         if (n != JOptionPane.YES_OPTION)
             return;
-        for (int i = 0; i < toRemove.length; i++) {        	
+        for (int i = 0; i < toRemove.length; i++) {
         		CurrentProject.getResourcesList().removeResource(
                         ((Resource) resourcesTable.getModel().getValueAt(toRemove[i], ResourcesTable._RESOURCE)).getPath());
         }
@@ -290,7 +290,7 @@ public class ResourcesPanel extends JPanel {
         SetAppDialog dlg =
             new SetAppDialog(
                 App.getFrame(),
-                Local.getString(Local.getString("Select the application to open files of type")+" '" + mt.getLabel() + "'"));
+                Local.getString(Local.getString("Select the application to open files of type") + " '" + mt.getLabel() + "'"));
         Dimension dlgSize = new Dimension(420, 300);
         dlg.setSize(dlgSize);
         Dimension frmSize = App.getFrame().getSize();
@@ -335,7 +335,7 @@ public class ResourcesPanel extends JPanel {
         }
         catch (Exception ex) {
             new ExceptionDialog(ex, "Failed to run an external application <br><code>"
-                    +command[0]+"</code>", "Check the application path and command line parameters for this resource type " +
+                     + command[0] + "</code>", "Check the application path and command line parameters for this resource type "  +
                     		"(File-&gt;Preferences-&gt;Resource types).");
         }
     }
@@ -407,18 +407,18 @@ public class ResourcesPanel extends JPanel {
 	  String baseName;
 	  int i = srcStr.lastIndexOf( File.separator );
 		if ( i != -1 ) {
-			baseName = srcStr.substring(i+1);
+			baseName = srcStr.substring(i + 1);
 		} else
 			baseName = srcStr;
 		
-	  String destStr = JN_DOCPATH + CurrentProject.get().getID() 
+	  String destStr = JN_DOCPATH + CurrentProject.get().getID()
 	  				   + File.separator + "_projectFiles" + File.separator + baseName;
 	  
 	  File f = new File(JN_DOCPATH + CurrentProject.get().getID() + File.separator + "_projectFiles");
 	  if (!f.exists()) {
 		  f.mkdirs();
 	  }	  
-	  System.out.println("[DEBUG] Copy file from: "+srcStr+" to: "+destStr);
+	  System.out.println("[DEBUG] Copy file from: " + srcStr + " to: " + destStr);
 	  
 	  try {
          FileInputStream in = new FileInputStream(srcStr);

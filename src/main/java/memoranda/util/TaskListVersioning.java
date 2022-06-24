@@ -88,7 +88,7 @@ public class TaskListVersioning {
             Element root = doc.getRootElement();
             Elements tasks = root.getChildElements("task");
                         
-            for (int j = 0; j < tasks.size(); j++) {                                
+            for (int j = 0; j < tasks.size(); j++) {
                 Element task = tasks.get(j );
 
 //	Decided not to change the date format after all but I'm leaving this code here 

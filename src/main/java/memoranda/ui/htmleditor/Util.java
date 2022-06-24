@@ -61,7 +61,7 @@ public class Util {
     }
     
     public static String encodeColor(Color color) {        
-        return "#"+Integer.toHexString(color.getRGB()-0xFF000000).toUpperCase();  
+        return "#" + Integer.toHexString(color.getRGB()-0xFF000000).toUpperCase();  
     }
 
     public static Color decodeColor(String color) {

@@ -12,7 +12,7 @@ public class PriorityQueue {
         private int n;
         
         public PriorityQueue(int size){
-                a = new Pair[size+2];
+                a = new Pair[size + 2];
                 n = 0;
         }
         public void insertar(Pair x){
@@ -35,8 +35,8 @@ public class PriorityQueue {
                         while(2*j<=n)
                         {
                                 int k=2*j;
-                                if(k+1<=n && a[k+1].getPriority() < a[k].getPriority())
-                                        k=k+1;  
+                                if(k + 1<=n && a[k + 1].getPriority() < a[k].getPriority())
+                                        k=k + 1;  
                                 if(a[j].getPriority() < a[k].getPriority())
                                         break;
                                 Pair t = a[j]; 

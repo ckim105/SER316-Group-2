@@ -27,10 +27,10 @@ public class Local {
 	                    + currentLocale.getLanguage()
 	                    + ".properties";
 	        if (Configuration.get("LOCALES_DIR") != "") {
-	        	System.out.print("Look "+fn+" at: "+Configuration.get("LOCALES_DIR")+" ");
+	        	System.out.print("Look " + fn + " at: " + Configuration.get("LOCALES_DIR") + " ");
 	        	try {
 	        		messages.load(new FileInputStream(
-	        			Configuration.get("LOCALES_DIR")+File.separator+fn));
+	        			Configuration.get("LOCALES_DIR") + File.separator + fn));
 	        		System.out.println(" - found");
 	        	}
 	        	catch (IOException ex) {
@@ -43,7 +43,7 @@ public class Local {
 		        try {
 		            messages.load(
 		                Local.class.getResourceAsStream(
-		                    "localmessages/"+fn));            
+		                    "localmessages/" + fn));            
 		        }
 		        catch (Exception e) {
 		            // Do nothing ...

@@ -137,7 +137,7 @@ public class ProjectExporter {
                 .compile("</body>", java.util.regex.Pattern.DOTALL
                         + java.util.regex.Pattern.CASE_INSENSITIVE).split(text)[0];
         /*
-                 * if (_copyImages) { ?)\"" + java.util.regex.Pattern.DOTALL +
+                 * if (_copyImages) { ?)\"" + java.util.regex.Pattern.DOTALL  +
                  * java.util.regex.Pattern.CASE_INSENSITIVE); Matcher m =
                  * p.matcher(text); for (int i = 1; i < m.groupCount(); i++) { String g =
                  * m.group(i); String url = g.split("\"")[1];
@@ -194,7 +194,7 @@ public class ProjectExporter {
                                 _charset);
                     else
                         fw = new FileWriter(f);
-                    String s = "<html>\n<head>\n"+charsetString+"<title>" + note.getTitle()
+                    String s = "<html>\n<head>\n" + charsetString + "<title>" + note.getTitle()
                             + "</title>\n</head>\n<body>\n" + getNoteHTML(note);
                     if (_navigation) {
                         Note nprev = null;

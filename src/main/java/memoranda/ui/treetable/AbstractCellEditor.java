@@ -38,7 +38,7 @@ public class AbstractCellEditor implements CellEditor {
 	// those that are interested in this event
 	for (int i = listeners.length-2; i>=0; i-=2) {
 	    if (listeners[i]==CellEditorListener.class) {
-		((CellEditorListener)listeners[i+1]).editingStopped(new ChangeEvent(this));
+		((CellEditorListener)listeners[i + 1]).editingStopped(new ChangeEvent(this));
 	    }	       
 	}
     }
@@ -55,7 +55,7 @@ public class AbstractCellEditor implements CellEditor {
 	// those that are interested in this event
 	for (int i = listeners.length-2; i>=0; i-=2) {
 	    if (listeners[i]==CellEditorListener.class) {
-		((CellEditorListener)listeners[i+1]).editingCanceled(new ChangeEvent(this));
+		((CellEditorListener)listeners[i + 1]).editingCanceled(new ChangeEvent(this));
 	    }	       
 	}
     }

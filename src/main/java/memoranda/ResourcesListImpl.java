@@ -101,7 +101,7 @@ public class ResourcesListImpl implements ResourcesList {
             if (rs.get(i).getAttribute("path").getValue().equals(path)) {
             	if(getResource(path).isProjectFile()) {
             		File f = new File(path);
-            		System.out.println("[DEBUG] Removing file "+path);
+            		System.out.println("[DEBUG] Removing file " + path);
                 	f.delete();
             	}
             	_root.removeChild(rs.get(i));

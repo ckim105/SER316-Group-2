@@ -70,7 +70,7 @@ Anna Lehner : 1
 ### Sprint Review
 Answer as a team!
 
-**Screen Cast link**: Your link
+**Screen Cast link**: https://youtu.be/8pKj7raYM3s 
 
 > Answer the following questions as a team. 
 
@@ -125,8 +125,8 @@ Answer as a team!
 #### Team member A -- Fayez Mehdad:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - link1
-    - link2
+    - US#53 - Change Look and Feel to be more like Scrumbox - https://github.com/ckim105/SER316-Group-2/commit/2f9ef6bc412f890c21178378ef0912494cf6068c
+    - US#53 - Design a new logo for splash screen, app icon and for about page - https://github.com/ckim105/SER316-Group-2/commit/44478962fa5b76d1307e5d66ebcd9e4962574ba7 
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
@@ -135,8 +135,10 @@ Answer as a team!
 
   **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
-    - link1
-    - link2
+    - Code Review in comments - Reviewed all files changed before merging with master
+      https://github.com/ckim105/SER316-Group-2/pull/30
+    - Code Review in commennts - Completed reviewer checklist for team members pull request
+      https://github.com/ckim105/SER316-Group-2/pull/26
 
   **How did you contribute to Static Analysis -- Sprint 3:
 
@@ -145,13 +147,14 @@ Answer as a team!
  
  **What was your main contribution to the Quality Policy documentation?:
 
-    - info
+    - Met with the team to establish developer and reviewer checklist for code review.
+      Additionally, decided on code coverage for testing files
     
 #### Team member B -- Sumbal Khan:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
 
-    - link1
-    - link2
+    - Add Description Field for Projects: https://github.com/ckim105/SER316-Group-2/pull/24/commits/699e0d9abd6043a75917b3a8cfde9192b81a76e6
+    - Change "project" to "New Scrumbox Project": https://github.com/ckim105/SER316-Group-2/pull/24/commits/1db06dbeef075298186f229e7a0c5b485ded6cf0
 
    **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
 
@@ -160,8 +163,8 @@ Answer as a team!
 
   **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
 
-    - link1
-    - link2
+    - Code Review in Comments: https://github.com/ckim105/SER316-Group-2/pull/19
+    - Code Review in Comments: https://github.com/ckim105/SER316-Group-2/pull/24
 
   **How did you contribute to Static Analysis -- Sprint 3:
 
@@ -170,7 +173,7 @@ Answer as a team!
  
  **What was your main contribution to the Quality Policy documentation?:
 
-    - info
+    - I followed the quality policy by completeting the codes reviews, branching off of Dev and pushing changes into dev, and ensuring there were good commit messages. 
     
 #### Team member C -- Kevin Nguyen:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:

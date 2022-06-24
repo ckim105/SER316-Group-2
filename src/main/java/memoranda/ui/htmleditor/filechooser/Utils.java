@@ -18,7 +18,7 @@ public class Utils {
         int i = s.lastIndexOf('.');
 
         if (i > 0 &&  i < s.length() - 1) {
-            ext = s.substring(i+1).toLowerCase();
+            ext = s.substring(i + 1).toLowerCase();
         }
         return ext;
     }

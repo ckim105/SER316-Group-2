@@ -37,7 +37,7 @@ public class TaskProgressEditor extends JPanel implements TableCellEditor{
 				}
 				int w = getWidth()/2;
 				if(e.getX() > w){
-					current.setProgress( current.getProgress()+5 );
+					current.setProgress( current.getProgress() + 5 );
 				}else{
 					current.setProgress( current.getProgress()-5 );
 				}
@@ -69,7 +69,7 @@ public class TaskProgressEditor extends JPanel implements TableCellEditor{
 		label.setText("-");
 		label.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 		label.paint(g);
-		label.setText("+");
+		label.setText(" + ");
 		label.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
 		label.paint(g);
 				

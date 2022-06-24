@@ -239,12 +239,12 @@ public class TableSorter extends TableMap {
         // n2sort();
         // qsort(0, indexes.length-1);
         shuttlesort((int[])indexes.clone(), indexes, 0, indexes.length);
-        //System.out.println("Compares: "+compares);
+        //System.out.println("Compares: " + compares);
     }
 
     public void n2sort() {
         for (int i = 0; i < getRowCount(); i++) {
-            for (int j = i+1; j < getRowCount(); j++) {
+            for (int j = i + 1; j < getRowCount(); j++) {
                 if (compare(indexes[i], indexes[j]) == -1) {
                     swap(i, j);
                 }
