@@ -89,7 +89,7 @@ public class ProjectExportDialog extends JDialog {
     jPanel1.setLayout(borderLayout2);
     jLabel1.setMaximumSize(new Dimension(155, 16));
     jLabel1.setPreferredSize(new Dimension(80, 16));
-    jLabel1.setText(Local.getString("Encoding")+":");
+    jLabel1.setText(Local.getString("Encoding") + ":");
     jPanel4.setLayout(gridLayout1);
     splitChB.setText(Local.getString("Split notes into separate files"));
     gridLayout1.setColumns(1);

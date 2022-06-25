@@ -39,7 +39,7 @@ public class HTMLFileImport {
             in.close();            
         }
         catch (Exception e) {
-            new ExceptionDialog(e, "Failed to import "+f.getPath(), "");
+            new ExceptionDialog(e, "Failed to import " + f.getPath(), "");
             return;
         }
         text = Pattern.compile("<body(.*?)>", java.util.regex.Pattern.DOTALL + java.util.regex.Pattern.CASE_INSENSITIVE)

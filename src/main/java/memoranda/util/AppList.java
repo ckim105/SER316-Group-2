@@ -50,7 +50,7 @@ public class AppList {
                 if (fPath.indexOf(' ') >= 0)
                    fPath = '"' + fPath + '"'; 
                 pt = pt.replaceAll("\\$1", fPath);
-                return app.getAttribute("findPath").getValue() + "/" + app.getAttribute("exec").getValue()+" "+pt;
+                return app.getAttribute("findPath").getValue() + "/" + app.getAttribute("exec").getValue() + " " + pt;
             }
         return null;
     }
@@ -64,7 +64,7 @@ public class AppList {
                 String command = app.getAttribute("command").getValue();
                 String exec = app.getAttribute("findPath").getValue() + "/" + app.getAttribute("exec").getValue();
                 StringTokenizer st = new StringTokenizer(command);
-                String[] cmdarray = new String[st.countTokens()+1];
+                String[] cmdarray = new String[st.countTokens() + 1];
                 cmdarray[0] = exec;
                 for (int j = 1; st.hasMoreTokens(); j++) {
                     String tk = st.nextToken();

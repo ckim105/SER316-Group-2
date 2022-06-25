@@ -12,6 +12,7 @@ repositories {
 dependencies {
   compile 'com.io7m.xom:xom:1.2.+'
   compile 'net.sourceforge.nekohtml:nekohtml:1.9.+'
+    compile group: 'org.json', name: 'json', version: '20131018'
 }
 
 import org.apache.tools.ant.filters.ReplaceTokens

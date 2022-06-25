@@ -1656,7 +1656,7 @@ public class AltHTMLWriter extends AbstractWriter {
             int insMaxIndex = (insMinIndex + length) - 1;
 
             /* Right shift the entire bitset by length, beginning with
-             * index-1 if before is true, index+1 if it's false (i.e. with
+             * index-1 if before is true, index + 1 if it's false (i.e. with
              * insMinIndex).
              */
             for (int i = maxIndex; i >= insMinIndex; i--) {

@@ -122,12 +122,12 @@ public class MimeType {
        String ip = getIconPath();
        ImageIcon icon = null;
        if (ip.equals("")) {
-        ip = "/ui/icons/mimetypes/"+getMimeTypeId()+".png";
+        ip = "/ui/icons/mimetypes/" + getMimeTypeId() + ".png";
         try {
           icon = new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource(ip));
         }
         catch (Exception ex) {
-          ip = "/ui/icons/mimetypes/"+getMimeTypeId().split("/")[0]+"/default.png";
+          ip = "/ui/icons/mimetypes/" + getMimeTypeId().split("/")[0] + "/default.png";
           try {
             icon = new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource(ip));
           }
@@ -141,7 +141,7 @@ public class MimeType {
             icon = new ImageIcon(ip);
           }
           catch (Exception ex) {
-          ip = "/ui/icons/mimetypes/"+getMimeTypeId().split("/")[0]+"/default.png";
+          ip = "/ui/icons/mimetypes/" + getMimeTypeId().split("/")[0] + "/default.png";
           try {
             icon = new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource(ip));
           }

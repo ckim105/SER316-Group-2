@@ -39,10 +39,10 @@ public class Util {
         	seed1 = System.currentTimeMillis(); // Make sure we'll don't get the same seed twice		  
     	seed = seed1;        	
     	Random r = new Random(seed); 
-    	return Integer.toString(r.nextInt(), 16) +
-				"-"+Integer.toString(r.nextInt(65535), 16) +
-				"-"+Integer.toString(r.nextInt(65535), 16) +
-				"-"+Integer.toString(r.nextInt(65535), 16);
+    	return Integer.toString(r.nextInt(), 16)  + 
+				"-" + Integer.toString(r.nextInt(65535), 16)  + 
+				"-" + Integer.toString(r.nextInt(65535), 16)  + 
+				"-" + Integer.toString(r.nextInt(65535), 16);
                     
     }
 
@@ -84,20 +84,20 @@ public class Util {
     	// Changed static building of getEnvDir
     	// Now system-related path-separator is used
 		String p = System.getProperty("user.home") + File.separator 
-			+ ".jnotes2" + File.separator;
+			 +  ".jnotes2" + File.separator;
         if (new File(p).isDirectory()) return p;
         return System.getProperty("user.home") + File.separator 
-        	+ ".memoranda" + File.separator;
+        	 +  ".memoranda" + File.separator;
     }
 
     public static String getCDATA(String s) {
-      return "<![CDATA["+s+"]]>";
+      return "<![CDATA[" + s + "]]>";
     }
     
     public static void runBrowser(String url) {
         if (!checkBrowser())
             return;
-        String commandLine = MimeTypesList.getAppList().getBrowserExec()+" "+url;
+        String commandLine = MimeTypesList.getAppList().getBrowserExec() + " " + url;
         System.out.println("Run: " + commandLine);
         try {
             /*DEBUG*/
@@ -105,7 +105,7 @@ public class Util {
         }
         catch (Exception ex) {
             new ExceptionDialog(ex, "Failed to run an external web-browser application with commandline<br><code>"
-                    +commandLine+"</code>", "Check the application path and command line parameters " +
+                     + commandLine + "</code>", "Check the application path and command line parameters "  + 
                     		"(File-&gt;Preferences-&gt;Resource types).");
         }
     }

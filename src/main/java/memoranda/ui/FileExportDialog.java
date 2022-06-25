@@ -99,7 +99,7 @@ public class FileExportDialog extends javax.swing.JDialog {
         optionsPanel.setBorder(new javax.swing.border.EmptyBorder(new java.awt.Insets(5, 5, 5, 5)));
         encPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
 
-        jLabel2.setText(Local.getString("Encoding")+":");
+        jLabel2.setText(Local.getString("Encoding") + ":");
         encPanel.add(jLabel2);
 
         encCB.setMaximumSize(new java.awt.Dimension(32767, 19));
@@ -107,7 +107,7 @@ public class FileExportDialog extends javax.swing.JDialog {
 
         optionsPanel.add(encPanel);
 
-        usetemplChB.setText(Local.getString("Use template")+":");
+        usetemplChB.setText(Local.getString("Use template") + ":");
         usetemplChB.setMargin(new java.awt.Insets(0, 0, 0, 0));
         usetemplChB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent e) {                

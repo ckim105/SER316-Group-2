@@ -239,7 +239,7 @@ public class DailyItemsPanel extends JPanel {
                 
 //                // DEBUG
 //                if (currentNote != null) {
-//                    Util.debug("currentNote has been set to " + currentNote.getTitle());        	
+//                    Util.debug("currentNote has been set to " + currentNote.getTitle());
 //                }
 //                else {
 //                    Util.debug("currentNote has been set to null");
@@ -430,7 +430,7 @@ public class DailyItemsPanel extends JPanel {
                 /*String evlist = "";
                 for (Iterator it = EventsScheduler.getScheduledEvents().iterator(); it.hasNext();) {
                     net.sf.memoranda.Event ev = (net.sf.memoranda.Event)it.next();   
-                    evlist += ev.getTimeString()+" - "+ev.getText()+"\n";
+                    evlist += ev.getTimeString() + " - " + ev.getText() + "\n";
                 } */
                 main.java.memoranda.Event ev = EventsScheduler.getFirstScheduledEvent();
                 alarmB.setToolTipText(ev.getTimeString() + " - " + ev.getText());

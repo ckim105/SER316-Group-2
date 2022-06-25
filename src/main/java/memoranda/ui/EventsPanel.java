@@ -397,13 +397,13 @@ public class EventsPanel extends JPanel {
 
 		if(eventsTable.getSelectedRows().length > 1) 
 			msg = Local.getString("Remove") + " " + eventsTable.getSelectedRows().length 
-				+ " " + Local.getString("events") + "\n" + Local.getString("Are you sure?");
+				 +  " " + Local.getString("events") + "\n" + Local.getString("Are you sure?");
 		else {
 			ev = (main.java.memoranda.Event) eventsTable.getModel().getValueAt(
                 eventsTable.getSelectedRow(),
                 EventsTable.EVENT);
 			msg = Local.getString("Remove event") + "\n'" 
-				+ ev.getText() + "'\n" + Local.getString("Are you sure?");
+				 +  ev.getText() + "'\n" + Local.getString("Are you sure?");
 		}
 
         int n =

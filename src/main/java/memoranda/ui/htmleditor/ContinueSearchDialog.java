@@ -69,7 +69,7 @@ public class ContinueSearchDialog extends JPanel {
     flowLayout1.setAlignment(FlowLayout.RIGHT);
     buttonsPanel.setLayout(flowLayout1);
     
-    jLabel1.setText(" "+Local.getString("Search for")+":  ");
+    jLabel1.setText(" " + Local.getString("Search for") + ":  ");
     jLabel1.setIcon(new ImageIcon(main.java.memoranda.ui.htmleditor.HTMLEditor.class.getResource("/htmleditor/icons/findbig.png"))) ;   
     this.add(jLabel1, BorderLayout.WEST);
     this.add(textF,BorderLayout.CENTER);    

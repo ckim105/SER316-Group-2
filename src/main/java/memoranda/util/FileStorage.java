@@ -15,6 +15,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.URL;
+import org.json.*;
 
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
@@ -55,11 +56,17 @@ public class FileStorage implements Storage {
         if (mHome.length() > 0) {
             JN_DOCPATH = mHome;
             /*DEBUG*/
-        	System.out.println("[DEBUG]***Memoranda storage path has set to: " +
+        	System.out.println("[DEBUG]***Memoranda storage path has set to: "  + 
         	 JN_DOCPATH);
         }
     }
-
+    
+    /**
+     * Saves the document both as XML and as JSON
+     *
+     * @param doc
+     * @param filePath
+     */
     public static void saveDocument(Document doc, String filePath) {
         /**
          * @todo: Configurable parameters
@@ -72,6 +79,15 @@ public class FileStorage implements Storage {
             OutputStreamWriter fw =
                 new OutputStreamWriter(new FileOutputStream(filePath), "UTF-8");
             fw.write(doc.toXML());
+            
+            String newFileLoc = filePath+".JSON"; //create new extension
+            OutputStreamWriter fw2 = new OutputStreamWriter(new FileOutputStream
+                    (newFileLoc),"UTF-8");      //create new OutputStreamWriter
+            String jsonString = XML.toJSONObject(doc.toXML()).toString(4); //Convert to JSON
+            fw2.write(jsonString); //write the json file
+            
+            fw2.flush();
+            fw2.close();
             fw.flush();
             fw.close();
         }
@@ -82,6 +98,7 @@ public class FileStorage implements Storage {
                 "");
         }
     }
+    
 
     public static Document openDocument(InputStream in) throws Exception {
         Builder builder = new Builder();
@@ -117,7 +134,7 @@ public class FileStorage implements Storage {
         CalendarDate d = note.getDate();
 
         filename += note.getId();//d.getDay() + "-" + d.getMonth() + "-" + d.getYear();
-        /*DEBUG*/System.out.println("[DEBUG] Save note: "+ filename);
+        /*DEBUG*/System.out.println("[DEBUG] Save note: " +  filename);
 
         try {
             OutputStreamWriter fw =
@@ -150,7 +167,7 @@ public class FileStorage implements Storage {
             oos.close();
             ostream.close();
             long t2 = new java.util.Date().getTime();
-            System.out.println(filename+" save:"+ (t2-t1) );
+            System.out.println(filename + " save:" +  (t2-t1) );
         }
             catch (Exception ex) {
                 ex.printStackTrace();
@@ -201,7 +218,7 @@ public class FileStorage implements Storage {
             ois.close();
             istream.close();
             long t2 = new java.util.Date().getTime();
-            System.out.println(filename+" open:"+ (t2-t1) );
+            System.out.println(filename + " open:" +  (t2-t1) );
         }
         catch (Exception ex) {
             ex.printStackTrace();
