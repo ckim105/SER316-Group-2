@@ -127,6 +127,34 @@ Answer as a team!
 
 > In this section I want you to point me to your main contributions (each of you individually). Some of the topcs are not needed for the first deliverables (you should know which things you should have done in this Sprint, if you don't then you have probably missed something):
 
+#### Team member C -- Kevin Nguyen:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+
+    - US#47 Task 1: https://github.com/ckim105/SER316-Group-2/commit/cccc25135b8305a28263f19ed86ca7f5d3b5cdcc
+    - US#47 Task 2: https://github.com/ckim105/SER316-Group-2/commit/09034b2a3addf587cf3446f5040653676c9b3ea6
+    - US#47 Task 3: https://github.com/ckim105/SER316-Group-2/commit/be0180d970557d7b54ab3d3e12c2c3fe1b3e7088
+    - US#42: https://github.com/ckim105/SER316-Group-2/commit/18a42735be0f706d1d22e4555ae8f45ee2a6c331
+    - US#64: https://github.com/ckim105/SER316-Group-2/commit/c05010fdd7fab15b224332efbf75c6f7c09c41d9
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - US#47 Blackbox Test: https://github.com/ckim105/SER316-Group-2/commit/c6d9581bf30eb5ffca5954e7aac765497c643fae
+    - US#47 Whitebox Test: https://github.com/ckim105/SER316-Group-2/commit/c6d9581bf30eb5ffca5954e7aac765497c643fae
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - US#64 Developer Checklist: https://github.com/ckim105/SER316-Group-2/pull/44
+    - Reviewer Checklist (I Merge): https://github.com/ckim105/SER316-Group-2/pull/40
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - US#64 Checkstyle Team.java file (23 Errors removed): https://github.com/ckim105/SER316-Group-2/commit/3f51632577d8f0d2c195e50dbc893d1286652fb5
+ 
+ **What was your main contribution to the Quality Policy documentation?:
+
+    - I added in a lot of the policies for the Quality Policy such as Code Review, Static Analysis, and Continuous Integration. In order to implement code review, whenever I merged a task branch into dev, I included the Developer Checklist and how to test the code. When I reviewed a pull request, I included a Reviewer Checklist.
+    
+
 #### Team member Fayez Mehdad:
   **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
     - https://github.com/ckim105/SER316-Group-2/pull/40/commits/e771941740a1d087bc9bac95fcfbdec944a890de
@@ -183,7 +211,7 @@ Did a code review and tried to follow formatting.
 - [x] Your Quality Policies are accurate and up to date
 - [ ] **Individual** Survey was submitted **individually** (create checkboxes below -- see Canvas to get link)
   - [x] Team member Fayez Mehdad
-  - [ ] Team member 2
+  - [x] Team member Kevin Nguyen
 - [x] The original of this file was copied for the next Sprint (needed for all but last Sprint where you do not need to copy it anymore)
   - [x] Basic information (part 1) for next Sprint was included (meaning Spring Planning is complete)
   - [x] All User Stories have acceptance tests
