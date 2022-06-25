@@ -1,5 +1,6 @@
 /** 
  * NewTeamPanel.java
+
  * Runs window for creating new Team
  *
  * @author Anna Lehner
@@ -10,14 +11,16 @@ package main.java.memoranda.ui;
 import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
+import main.java.memoranda.ui.Team;
 
 public class NewTeamPanel {
-	
 	/**
 	 * Opening New Team Window
 	 */
+	public Team currentTeam;
+	
 	public NewTeamPanel() {
-
+		
         JFrame NAframe = new JFrame("New Team");
         JPanel buttonPane = new JPanel();
         JPanel fieldsPanel = new JPanel();
@@ -178,6 +181,8 @@ public class NewTeamPanel {
             	}
             	Team newTeam = new Team(inTeamName, inTeamM1, inTM1R, inTeamM2, inTM2R,
             			inTeamM3, inTM3R, inTeamM4, inTM4R);
+            	
+            	currentTeam = newTeam;
                 NAframe.dispose();               
             }
         });

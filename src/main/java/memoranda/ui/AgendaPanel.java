@@ -1,6 +1,7 @@
 package main.java.memoranda.ui;
 
 import java.awt.BorderLayout;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
@@ -240,7 +241,7 @@ public class AgendaPanel extends JPanel {
         createTeamB.setEnabled(true);
         createTeamB.setMaximumSize(new Dimension(24, 24));
         createTeamB.setMinimumSize(new Dimension(24, 24));
-        createTeamB.setToolTipText(Local.getString("Create New User Story"));
+        createTeamB.setToolTipText(Local.getString("Create new Team"));
         createTeamB.setRequestFocusEnabled(false);
         createTeamB.setPreferredSize(new Dimension(24, 24));
         createTeamB.setFocusable(false);
