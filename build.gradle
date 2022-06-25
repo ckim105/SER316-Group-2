@@ -1,3 +1,7 @@
+plugins {
+    id "checkstyle"
+}
+
 apply plugin: 'application'
 
 mainClassName = 'main/java/memoranda/Start'
@@ -36,4 +40,31 @@ task prepareSources(type: Copy) {
 // Prepare sources, before compile
 compileJava {
     dependsOn prepareSources
+}
+
+
+///////////////////////////////////////////////////////////////////////
+// Configure Checkstyle
+/////////////////////////////////////////////////////////////////////
+apply plugin: 'checkstyle'
+// checkstyle {
+//   // Keep checkstyle a little quieter
+//   ignoreFailures = true
+//   showViolations = false
+// }
+
+tasks.withType(Checkstyle) {
+  
+  reports {
+    html.enabled = true
+    xml.enabled = false
+  }
+  // include '**/*.java'
+
+  include '**/ui/Team.java'
+  include '**/ui/NewTeamPanel.java'
+ }
+
+checkstyle {
+    toolVersion = "8.8"
 }
