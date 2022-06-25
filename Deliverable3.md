@@ -1,5 +1,5 @@
 # Deliverable Information
-   > Please include your answers below in a good format so it is easy for me to see. For answers to questions please use these Blockquotes. Make sure you also check the kickoff document for more details. Also make sure this thing is well formatted and the links are links in here. 
+   > Please include your answers below in a good format so it is easy for me to see. For answers to questions please use these Blockquotes. Make sure you also check the kickoff document for more details. Also make sure this thing is well formatted and the links are links in here.
 
 ## 1: Basic Information (needed before you start with your Sprint -- Sprint Planning)
 
@@ -12,7 +12,7 @@
 **Git Master**: Anna Lehner
 
 ### Sprint Planning (For Sprint 1-3)
-Document your Sprint Planning here. Also check the kickoff document for more details on what needs to be done. This is just the documentation. 
+Document your Sprint Planning here. Also check the kickoff document for more details on what needs to be done. This is just the documentation.
 
 **Sprint Goal:**
 > The goal of Sprint 3 is to complete the functionalities and features in ScrumBox so that users and teams can create their own Scrumboards
@@ -21,7 +21,7 @@ Document your Sprint Planning here. Also check the kickoff document for more det
 
 > We do not have any User Stories left in the Backlog for Sprint 3
 
-**How many User Stories did you add to this Sprint:** 
+**How many User Stories did you add to this Sprint:**
 
 > We added 8 User Stories to complete Sprint 3
 
@@ -39,11 +39,11 @@ Document your Sprint Planning here. Also check the kickoff document for more det
 
 
 ## 2: During the Sprint
-> Fill out the Meeting minutes during your Sprint and keep track of things. Update your Quality policies when needed, as explained in the lectures and in the Quality Policy documents on Canvas. 
+> Fill out the Meeting minutes during your Sprint and keep track of things. Update your Quality policies when needed, as explained in the lectures and in the Quality Policy documents on Canvas.
 I would also advise you to already fill out the Contributions section (End of sprint) as you go, to create less work at the end.
 
 ### Meeting minutes of your Daily Scrums (3 per week, should not take longer than 10 minutes):
-> Add as many rows as needed and fill out the table. (Burndown starts with Sprint 2 and Travis CI starts with Sprint 3, not needed before that). 
+> Add as many rows as needed and fill out the table. (Burndown starts with Sprint 2 and Travis CI starts with Sprint 3, not needed before that).
 
 | Date  | Who did not attend  |Meeting notes (very brief)   | Burndown Info (on track, ahead behind is enough) | TravisCI info (does the master pass) | Additional Info  |
 |---|---|---|---|--|--|
@@ -70,7 +70,7 @@ Answer as a team!
 
 **Screen Cast link**: https://youtu.be/uAEz9ZJPgOQ
 
-> Answer the following questions as a team. 
+> Answer the following questions as a team.
 
 **What do you think is the value you created this Sprint?**
 
@@ -79,7 +79,7 @@ Answer as a team!
 
 **Do you think you worked enough and that you did what was expected of you?**
 
-> Yes, the team worked hard and communicated effectively, but due to blockades from previous sprint, the 
+> Yes, the team worked hard and communicated effectively, but due to blockades from previous sprint, the
 > team ran into many issues working on features developed by others in previous sprint
 > to be able to continue and complete the progress.
 
@@ -113,7 +113,7 @@ Answer as a team!
 **Did you deliver business value?**
 
 > Yes. Some business value was added. User Stories now calculate total points and total progress based on the progress from
-> their tasks, the system creates a JSON file which is much easier to parse than XML files 
+> their tasks, the system creates a JSON file which is much easier to parse than XML files
 
 **Are there things the team thinks it can do better in the next Sprint?**
 
@@ -146,11 +146,36 @@ Answer as a team!
 
     - link1
     - link2
- 
+
  **What was your main contribution to the Quality Policy documentation?:
 
     - Implemented checkstyle requirement and suggested Continuous Integration reviews
-  
+
+
+#### Team member Sumbal Khan:
+  **Links to GitHub commits with main code contribution (up to 5 links) - all Sprints:
+    - https://github.com/ckim105/SER316-Group-2/commit/4b0807bc1fc7563a613c9cec51e1bfd87212417b
+    - https://github.com/ckim105/SER316-Group-2/commit/d66e76f4e0071de40e5e23011ad0fc40f84c2c49
+
+   **GitHub links to your Unit Tests (up to 3 links) -- Sprint 2 and 3:
+
+    - link1
+    - link2
+
+  **GitHub links to your Code Reviews (up to 3 links) -- Sprint 2 and 3:
+
+    - Final PR review for master: https://github.com/ckim105/SER316-Group-2/pull/42/files#diff-b5e46c3684e1e71d16c6360eb14cf3f9f874c7138ba3cbe08a3cb975e187a348
+    - link2
+
+  **How did you contribute to Static Analysis -- Sprint 3:
+
+    - link1
+    - link2
+
+ **What was your main contribution to the Quality Policy documentation?:
+Did a code review and tried to follow formatting.
+
+
 ## 4: Checklist for you to see if you are done
 - [x] Filled out the complete form from above, all fields are filled and written in full sentences
 - [x] Read the kickoff again to make sure you have all the details
