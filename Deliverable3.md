@@ -172,8 +172,7 @@ Answer as a team!
 
   **How did you contribute to Static Analysis -- Sprint 3:
 
-    - link1
-    - link2
+    - Fix checkstyle errors - (https://github.com/ckim105/SER316-Group-2/commit/73c634174565c5179d9700f0bd27ba842a8bd027)
 
  **What was your main contribution to the Quality Policy documentation?:
 
