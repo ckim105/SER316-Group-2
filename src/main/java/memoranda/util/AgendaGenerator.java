@@ -5,6 +5,7 @@
 package main.java.memoranda.util;
 
 import java.util.Calendar;
+
 import java.util.Collection;
 import java.util.Date;
 import java.util.Enumeration;
@@ -21,6 +22,7 @@ import main.java.memoranda.ProjectManager;
 import main.java.memoranda.Task;
 import main.java.memoranda.TaskList;
 import main.java.memoranda.date.CalendarDate;
+import main.java.memoranda.ui.Team;
 
 import java.util.Collections;
 
@@ -48,6 +50,8 @@ public class AgendaGenerator {
 
     static String generateTasksInfo(Project p, CalendarDate date, Collection expandedTasks) {
         TaskList tl;
+        Team cur;
+        
         if (p.getID().equals(CurrentProject.get().getID())) {
             tl = CurrentProject.getTaskList();
         }
@@ -62,35 +66,10 @@ public class AgendaGenerator {
         s += "</td></tr></table>\n";
 
         Vector tasks = (Vector) tl.getActiveSubTasks(null,date);
-        if (tasks.size() == 0) {
-            s += "<p>" + Local.getString("No actual tasks") + ".</p>\n";
-        }
-        else {
-            s += Local.getString("Actual tasks") + ":<br>\n<ul>\n";
-
-            //            TaskSorter.sort(tasks, date, TaskSorter.BY_IMP_RATE); // TODO: configurable method
-            Collections.sort(tasks);
-            for (Iterator i = tasks.iterator(); i.hasNext();) {
-                Task t = (Task) i.next();
-                // Always show active tasks only on agenda page from now on.
-                // If it's not active, then it's probably "not on the agenda" isn't it?
-                //        		if(Context.get("SHOW_ACTIVE_TASKS_ONLY").equals(new Boolean(true))) {
-                //                    if (!((t.getStatus() == Task.ACTIVE) || (t.getStatus() == Task.DEADLINE) || (t.getStatus() == Task.FAILED))) {
-                //                    	continue;
-                //                	}
-                //        		}
-                // ignore if it's a sub-task, iterate over ROOT tasks here only
-                if (tl.hasParentTask(t.getID())) {
-                    continue;
-                }
-
-                s = s + renderTask(p, date, tl, t, 0,expandedTasks);
-                if(expandedTasks.contains(t.getID())) {
-                    s = s + expandRecursively(p,date,tl,t,expandedTasks,1);
-                }
-            }
-            s += "\n</ul>\n";
-        }
+        
+            s += "<p>" + Local.getString("No Team") + "</p>\n";
+        
+        
 
         //        Util.debug("html for project " + p.getTitle() + " is\n" + s);
         return s;
