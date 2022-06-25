@@ -68,18 +68,18 @@ I would also advise you to already fill out the Contributions section (End of sp
 ### Sprint Review
 Answer as a team!
 
-**Screen Cast link**: Your link
+**Screen Cast link**: https://youtu.be/uAEz9ZJPgOQ
 
 > Answer the following questions as a team. 
 
 **What do you think is the value you created this Sprint?**
 
-> We added some functionality that makes the software more dynamic, 
-> and easy to use for the user.
+> We added some functionality that makes the software more dynamic, such as being able to see the amount of tasks accomplished in percentages in the Sprint
+> dashboard. Scrumbox is also much easier to use for the user from where we started with project.
 
 **Do you think you worked enough and that you did what was expected of you?**
 
-> Yes, the team worked hard, but due to blockades from previous sprint, the 
+> Yes, the team worked hard and communicated effectively, but due to blockades from previous sprint, the 
 > team ran into many issues working on features developed by others in previous sprint
 > to be able to continue and complete the progress.
 
