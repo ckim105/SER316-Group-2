@@ -75,7 +75,7 @@ public class AgendaPanel extends JPanel {
 			ex.printStackTrace();
 		}
 	}
-	
+
 	void jbInit() throws Exception {
 		expandedTasks = new ArrayList();
 
@@ -234,13 +234,13 @@ public class AgendaPanel extends JPanel {
 		historyForwardB.setMinimumSize(new Dimension(24, 24));
 		historyForwardB.setMaximumSize(new Dimension(24, 24));
 		historyForwardB.setText("");
-		
+
 	    createTeamB.setIcon(
-	            new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/todo_new.png")));
+	            new ImageIcon(main.java.memoranda.ui.AppFrame.class.getResource("/ui/icons/s.newTeam-icon.png")));
 	    createTeamB.setEnabled(true);
 	    createTeamB.setMaximumSize(new Dimension(24, 24));
 	    createTeamB.setMinimumSize(new Dimension(24, 24));
-	    createTeamB.setToolTipText(Local.getString("Create New User Story"));
+	    createTeamB.setToolTipText(Local.getString("Create Team"));
 	    createTeamB.setRequestFocusEnabled(false);
 	    createTeamB.setPreferredSize(new Dimension(24, 24));
 	    createTeamB.setFocusable(false);
@@ -260,8 +260,8 @@ public class AgendaPanel extends JPanel {
 		toolBar.add(historyForwardB, null);
 		toolBar.add(createTeamB, null);
 		toolBar.addSeparator(new Dimension(8, 24));
-		
-		
+
+
 
 		this.add(toolBar, BorderLayout.NORTH);
 
@@ -296,7 +296,7 @@ public class AgendaPanel extends JPanel {
 			}
 		});
 		refresh(CurrentDate.get());
-		
+
 
 		//        agendaPPMenu.setFont(new java.awt.Font("Dialog", 1, 10));
 		//        agendaPPMenu.add(ppShowActiveOnlyChB);
@@ -309,12 +309,12 @@ public class AgendaPanel extends JPanel {
 		//			public void actionPerformed(ActionEvent e) {
 		//				toggleShowActiveOnly_actionPerformed(e);
 		//			}
-		//		});		
+		//		});
 		//		boolean isShao =
 		//			(Context.get("SHOW_ACTIVE_TASKS_ONLY") != null)
 		//				&& (Context.get("SHOW_ACTIVE_TASKS_ONLY").equals("true"));
 		//		ppShowActiveOnlyChB.setSelected(isShao);
-		//		toggleShowActiveOnly_actionPerformed(null);		
+		//		toggleShowActiveOnly_actionPerformed(null);
 	}
 
 	public void refresh(CalendarDate date) {
@@ -346,13 +346,13 @@ public class AgendaPanel extends JPanel {
 	//		/*if (taskTable.isShowActiveOnly()) {
 	//			// is true, toggle to false
 	//			taskTable.setShowActiveOnly(false);
-	//			//showActiveOnly.setToolTipText(Local.getString("Show Active Only"));			
+	//			//showActiveOnly.setToolTipText(Local.getString("Show Active Only"));
 	//		}
 	//		else {
 	//			// is false, toggle to true
 	//			taskTable.setShowActiveOnly(true);
-	//			showActiveOnly.setToolTipText(Local.getString("Show All"));			
-	//		}*/	    
+	//			showActiveOnly.setToolTipText(Local.getString("Show All"));
+	//		}*/
 	//		refresh(CurrentDate.get());
 	////		parentPanel.updateIndicators();
 	//		//taskTable.updateUI();
